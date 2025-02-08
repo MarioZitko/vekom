@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Concrete Slabs",
+    "description": "Durable and stylish concrete slabs for modern construction.",
+    "images": ["/images/slab1.jpg", "/images/slab2.jpg", "/images/slab3.jpg"]
+  },
+  {
+    "id": 2,
+    "title": "Industrial Concrete Blocks",
+    "description": "High-quality concrete blocks for industrial use.",
+    "images": ["/images/block1.jpg", "/images/block2.jpg", "/images/block3.jpg"]
+  },
+  {
+    "id": 3,
+    "title": "Decorative Concrete Tiles",
+    "description": "Beautiful concrete tiles for interior and exterior design.",
+    "images": ["/images/tile1.jpg", "/images/tile2.jpg", "/images/tile3.jpg"]
+  }
+]
