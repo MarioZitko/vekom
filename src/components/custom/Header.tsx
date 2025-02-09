@@ -1,8 +1,6 @@
-'use client';
-
 import * as React from 'react';
 import Link from 'next/link';
-import { Phone, Mail } from 'lucide-react'; // Icons for phone and mail
+import { Phone, Mail } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import {
@@ -14,63 +12,43 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { HeaderProps } from './types';
 
-// Product categories
-const products = [
-  {
-    title: 'Betonske ploče',
-    href: '/proizvodi/betonske-ploce',
-    description: 'Izdržljive betonske ploče za različite primjene.',
-  },
-  {
-    title: 'Ogradni elementi',
-    href: '/proizvodi/ogradni-elementi',
-    description: 'Modularni betonski elementi za ograde.',
-  },
-  {
-    title: 'Popločavanje',
-    href: '/proizvodi/poplocavanje',
-    description: 'Različiti oblici i boje betonskih ploča za popločavanje.',
-  },
-  {
-    title: 'Specijalni betonski proizvodi',
-    href: '/proizvodi/specijalni',
-    description: 'Proizvodi prilagođeni specifičnim potrebama.',
-  },
-];
-
-export function Header() {
+export function Header({ products }: HeaderProps) {
   return (
     <header className="w-full bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
         {/* Left Section: Vekom Logo + Contact Information */}
         <div className="flex items-center gap-6">
           {/* Vekom (acts as a Home button) */}
-          <Link href="/" className="text-xl font-bold text-blue-600 hover:text-blue-700 transition">
-            VEKOM
-          </Link>
+          <div className="flex flex-col">
+            <Link href="/" className="text-xl font-bold text-sky-500 hover:text-sky-600 transition">
+              VEKOM
+            </Link>
+            <p className="text-sm text-gray-600">Proizvodnja građevinskih elemenata</p>
+          </div>
 
           {/* Contact Information */}
-          <div className="hidden md:flex items-center gap-4 text-gray-700">
+          <div className="hidden md:flex items-center ml-6 gap-4 text-gray-700">
             {/* Phone 1 */}
             <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-blue-600" />
-              <a href="tel:+385016289196" className="text-sm hover:underline">
-                +385 (0) 1 6289 196
-              </a>
-            </div>
-
-            {/* Phone 2 */}
-            <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-blue-600" />
+              <Phone className="w-4 h-4 text-sky-600" />
               <a href="tel:+3850915687329" className="text-sm hover:underline">
                 +385 (0) 91 5687 329
               </a>
             </div>
 
+            {/* Phone 2 */}
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-sky-600" />
+              <a href="tel:+385016289196" className="text-sm hover:underline">
+                +385 (0) 1 6289 196
+              </a>
+            </div>
+
             {/* Email */}
             <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-blue-600" />
+              <Mail className="w-4 h-4 text-sky-600" />
               <a href="mailto:info@vekom-elementi.hr" className="text-sm hover:underline">
                 info@vekom-elementi.hr
               </a>
@@ -117,7 +95,7 @@ export function Header() {
             <NavigationMenuItem>
               <Link href="/kontakt" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Kontakt
+                  Kako do nas
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>

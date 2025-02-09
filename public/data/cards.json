@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Kanalice",
     "description": "Mogućnost narudžbe u više dimenzija: 10x50x9 / 15x50x11 / 27x50x10 cm.",
+    "articleLink": "/proizvodi/betonske-ploce",
     "images": [
       "/images/kanalica.png",
       "/images/kanalica.png",
@@ -13,12 +14,14 @@
     "id": 2,
     "title": "Industrial Concrete Blocks",
     "description": "Mogućnost narudžbe u više dimenzija: 10x50x9 / 15x50x11 / 27x50x10 cm.",
+    "articleLink": "/proizvodi/utezi",
     "images": ["/images/uteg1.jpeg", "/images/uteg2.jpeg", "/images/uteg3.jpeg"]
   },
   {
     "id": 3,
     "title": "Decorative Concrete Tiles",
     "description": "Beautiful concrete tiles for interior and exterior design.",
+    "articleLink": "/proizvodi/utezi",
     "images": ["/images/tile1.jpg", "/images/tile2.jpg", "/images/tile3.jpg"]
   }
 ]

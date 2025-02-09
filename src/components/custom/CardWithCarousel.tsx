@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Link from 'next/link';
 import {
   Card,
   CardContent,
@@ -18,15 +18,12 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { Button } from '../ui/button';
-import { Send } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { ImageDialog } from './ImageDialog';
+import { CardWithCarouselProps } from './types';
+import { ContactDialog } from './ContactDialog';
 
-interface CardProps {
-  title: string;
-  description: string;
-  images: string[];
-}
-
-export function CardWithCarousel({ cards }: { cards: CardProps[] }) {
+export function CardWithCarousel({ cards }: CardWithCarouselProps) {
   return (
     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       {cards.map((card, index) => (
@@ -35,7 +32,8 @@ export function CardWithCarousel({ cards }: { cards: CardProps[] }) {
             <CardTitle>{card.title}</CardTitle>
             <CardDescription>{card.description}</CardDescription>
           </CardHeader>
-          <CardContent className="flex items-center justify-center w-md h-md">
+
+          <CardContent className="flex items-center justify-center">
             <Carousel
               className="w-full max-w-xs"
               plugins={[
@@ -52,13 +50,7 @@ export function CardWithCarousel({ cards }: { cards: CardProps[] }) {
                 {card.images.map((image, imgIndex) => (
                   <CarouselItem key={imgIndex}>
                     <div className="p-1 w-md">
-                      <Image
-                        src={image}
-                        alt={`${card.title} - Image ${imgIndex + 1}`}
-                        width={300}
-                        height={200}
-                        className="rounded-lg object-cover w-full"
-                      />
+                      <ImageDialog image={image} alt={`${card.title} - Image ${imgIndex + 1}`} />
                     </div>
                   </CarouselItem>
                 ))}
@@ -67,11 +59,18 @@ export function CardWithCarousel({ cards }: { cards: CardProps[] }) {
               <CarouselNext className="mr-2" />
             </Carousel>
           </CardContent>
-          <CardFooter className="grid grid-cols-12">
-            <Button className=" col-span-4 col-start-9">
-              <Send />
-              Pošalji upit!
-            </Button>
+
+          <CardFooter className="flex justify-between items-center">
+            {/* Details Button (Article Link) */}
+            <Link href={card.articleLink} passHref>
+              <Button variant="outline">
+                <ExternalLink className="mr-2 w-4 h-4" />
+                Detalji
+              </Button>
+            </Link>
+
+            {/* Inquiry Button with ContactDialog */}
+            <ContactDialog productName={card.title} />
           </CardFooter>
         </Card>
       ))}
