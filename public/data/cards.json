@@ -5,9 +5,9 @@
     "description": "Mogućnost narudžbe u više dimenzija: 10x50x9 / 15x50x11 / 27x50x10 cm.",
     "articleLink": "/proizvodi/betonske-ploce",
     "images": [
-      "/images/kanalica.png",
-      "/images/kanalica.png",
-      "/images/kanalica.png"
+      "/images/products/kanalica.png",
+      "/images/products/kanalica.png",
+      "/images/products/kanalica.png"
     ]
   },
   {
@@ -15,7 +15,11 @@
     "title": "Industrial Concrete Blocks",
     "description": "Mogućnost narudžbe u više dimenzija: 10x50x9 / 15x50x11 / 27x50x10 cm.",
     "articleLink": "/proizvodi/utezi",
-    "images": ["/images/uteg1.jpeg", "/images/uteg2.jpeg", "/images/uteg3.jpeg"]
+    "images": [
+      "/images/products/uteg1.jpeg",
+      "/images/products/uteg2.jpeg",
+      "/images/products/uteg3.jpeg"
+    ]
   },
   {
     "id": 3,

@@ -13,43 +13,46 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { HeaderProps } from './types';
+import { DarkModeToggle } from './DarkModeToggle';
 
 export function Header({ products }: HeaderProps) {
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="w-full bg-secondary text-secondary-foreground shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-12">
         {/* Left Section: Vekom Logo + Contact Information */}
         <div className="flex items-center gap-6">
           {/* Vekom (acts as a Home button) */}
           <div className="flex flex-col">
-            <Link href="/" className="text-xl font-bold text-sky-500 hover:text-sky-600 transition">
+            <Link href="/" className="text-primary hover:text-secondary-foreground transition">
               VEKOM
+              <p className="text-sm text-muted-foreground hover:text-secondary-foreground">
+                Proizvodnja građevinskih elemenata
+              </p>
             </Link>
-            <p className="text-sm text-gray-600">Proizvodnja građevinskih elemenata</p>
           </div>
 
           {/* Contact Information */}
-          <div className="hidden md:flex items-center ml-6 gap-4 text-gray-700">
+          <div className="hidden md:flex items-center ml-6 gap-4 text-muted-foreground">
             {/* Phone 1 */}
             <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-sky-600" />
-              <a href="tel:+3850915687329" className="text-sm hover:underline">
+              <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:+3850915687329" className="text-sm hover:text-primary">
                 +385 (0) 91 5687 329
               </a>
             </div>
 
             {/* Phone 2 */}
             <div className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-sky-600" />
-              <a href="tel:+385016289196" className="text-sm hover:underline">
+              <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:+385016289196" className="text-sm hover:text-primary">
                 +385 (0) 1 6289 196
               </a>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-sky-600" />
-              <a href="mailto:info@vekom-elementi.hr" className="text-sm hover:underline">
+              <Mail className="w-4 h-4 text-primary" />
+              <a href="mailto:info@vekom-elementi.hr" className="text-sm hover:text-primary">
                 info@vekom-elementi.hr
               </a>
             </div>
@@ -62,7 +65,7 @@ export function Header({ products }: HeaderProps) {
             {/* Home */}
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
                   Početna
                 </NavigationMenuLink>
               </Link>
@@ -70,7 +73,7 @@ export function Header({ products }: HeaderProps) {
 
             {/* Products Dropdown */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Proizvodi</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-primary">Proizvodi</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {products.map((product) => (
@@ -85,7 +88,7 @@ export function Header({ products }: HeaderProps) {
             {/* About Us */}
             <NavigationMenuItem>
               <Link href="/o-nama" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
                   O nama
                 </NavigationMenuLink>
               </Link>
@@ -94,13 +97,16 @@ export function Header({ products }: HeaderProps) {
             {/* Contact */}
             <NavigationMenuItem>
               <Link href="/kontakt" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
                   Kako do nas
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+
+        {/* Right Section: Dark Mode Toggle */}
+        <DarkModeToggle />
       </div>
     </header>
   );

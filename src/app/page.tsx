@@ -1,5 +1,6 @@
 import { CardWithCarousel } from '@/components/custom/CardWithCarousel';
 import { Header } from '@/components/custom/Header';
+import { Hero } from '@/components/custom/Hero';
 import { parseData } from '@/lib/parseData';
 
 export default async function Home() {
@@ -9,7 +10,8 @@ export default async function Home() {
   return (
     <>
       <Header products={products} />
-      <main className="flex flex-col items-center justify-center min-h-screen p-6">
+      <Hero />
+      <main className="flex flex-col items-center justify-center p-6 md:px-12">
         <CardWithCarousel cards={cards} />
       </main>
     </>
