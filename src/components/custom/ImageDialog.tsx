@@ -11,16 +11,15 @@ export function ImageDialog({ image, alt }: ImageDialogProps) {
         <Image
           src={image}
           alt={alt}
-          width={300}
-          height={200}
+          width={280}
+          height={180}
           className="rounded-lg object-cover w-full cursor-pointer"
         />
       </DialogTrigger>
 
-      <DialogContent className="flex flex-col items-center">
-        {/* Accessible Dialog Title */}
-        <DialogTitle>{alt}</DialogTitle>
-        <Image src={image} alt={alt} width={600} height={400} className="rounded-lg object-cover" />
+      <DialogContent className="max-w-xs sm:max-w-md flex flex-col items-center">
+        <DialogTitle className="text-lg font-semibold">{alt}</DialogTitle>
+        <Image src={image} alt={alt} width={400} height={300} className="rounded-lg object-cover" />
       </DialogContent>
     </Dialog>
   );
