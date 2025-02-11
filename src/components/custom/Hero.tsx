@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 w-full max-w-[90%] md:max-w-5xl px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-center md:text-right">
+      <div className="relative w-full max-w-[90%] md:max-w-5xl px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-center md:text-right">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-lg leading-tight">
           Vrhunska kvaliteta s 30 godina tradicije
         </h1>
