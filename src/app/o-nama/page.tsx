@@ -1,14 +1,8 @@
-import { Header } from '@/components/custom/Header';
-import { parseData } from '@/lib/parseData';
 import Image from 'next/image';
 
 export default async function AboutPage() {
-  const products = await parseData('public/data/products.json');
-
   return (
     <>
-      <Header products={products} />
-
       <main className="flex flex-col items-center justify-center p-6 md:px-12">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-primary mb-12">
           O Nama
