@@ -1,8 +1,8 @@
 import { CardItem } from '@/types/cardItem';
-import { Product } from '../../types/product';
+import { Category } from '@/types/category';
 
 export interface HeaderProps {
-  products: Product[];
+  categories: Category[];
 }
 
 export interface ImageDialogProps {
@@ -16,4 +16,10 @@ export interface CardWithCarouselProps {
 
 export interface ContactDialogProps {
   productName: string;
+}
+
+export interface ProductCardProps {
+  title: string;
+  href: string;
+  image: string;
 }

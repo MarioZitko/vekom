@@ -1,0 +1,121 @@
+[
+  {
+    "title": "Betonski stupovi",
+    "href": "/proizvodi/betonski-konstrukcijski-elementi/betonski-stupovi",
+    "description": "Različite dimenzije betonskih stupova za konstrukcijske namjene.",
+    "image": "/images/products/betonski-stupovi.png",
+    "category": "betonski-konstrukcijski-elementi"
+  },
+  {
+    "title": "Konzole",
+    "href": "/proizvodi/betonski-konstrukcijski-elementi/konzole",
+    "description": "Betonske konzole različitih dimenzija za građevinske konstrukcije.",
+    "image": "/images/products/konzole.png",
+    "category": "betonski-konstrukcijski-elementi"
+  },
+  {
+    "title": "Šahte i poklopci",
+    "href": "/proizvodi/betonski-konstrukcijski-elementi/sahte-poklopci",
+    "description": "Betonske šahte i poklopci za infrastrukturne sustave.",
+    "image": "/images/products/sahte-poklopci.png",
+    "category": "betonski-konstrukcijski-elementi"
+  },
+  {
+    "title": "Ogradni međaši",
+    "href": "/proizvodi/betonski-konstrukcijski-elementi/ogradni-medjasi",
+    "description": "Betonski međaši različitih dimenzija.",
+    "image": "/images/products/ogradni-medjasi.png",
+    "category": "betonski-konstrukcijski-elementi"
+  },
+  {
+    "title": "Rubnjaci",
+    "href": "/proizvodi/poplocavanje-i-odvodnja/rubnjaci",
+    "description": "Različite vrste betonskih rubnjaka za uređenje eksterijera.",
+    "image": "/images/products/rubnjaci.png",
+    "category": "poplocavanje-i-odvodnja"
+  },
+  {
+    "title": "Kanalice",
+    "href": "/proizvodi/poplocavanje-i-odvodnja/kanalice",
+    "description": "Betonske kanalice za odvodnju s više dimenzija.",
+    "image": "/images/products/kanalice.png",
+    "category": "poplocavanje-i-odvodnja"
+  },
+  {
+    "title": "Ploče",
+    "href": "/proizvodi/poplocavanje-i-odvodnja/ploce",
+    "description": "Betonske ploče različitih dimenzija i primjena.",
+    "image": "/images/products/ploce.png",
+    "category": "poplocavanje-i-odvodnja"
+  },
+  {
+    "title": "Žardinjere",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjere",
+    "description": "Betonske žardinjere raznih oblika i dimenzija.",
+    "image": "/images/products/zardinjere.png",
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Vaze",
+    "href": "/proizvodi/vrt-i-dekoracija/vaze",
+    "description": "Dekorativne betonske vaze za vrtove i okućnice.",
+    "image": "/images/products/vaze.png",
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Parkirne kugle",
+    "href": "/proizvodi/vrt-i-dekoracija/parkirne-kugle",
+    "description": "Betonske parkirne kugle za urbane prostore.",
+    "image": "/images/products/parkirne-kugle.png",
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Dekorativni elementi",
+    "href": "/proizvodi/vrt-i-dekoracija/dekorativni-elementi",
+    "description": "Betonski dekorativni elementi kao što su kandelaberi i figure.",
+    "image": "/images/products/dekorativni-elementi.png",
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Vrtne pipe",
+    "href": "/proizvodi/vrt-i-dekoracija/vrtne-pipe",
+    "description": "Betonske vrtne pipe različitih dizajna.",
+    "image": "/images/products/vrtne-pipe.png",
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Dimnjačke kape",
+    "href": "/proizvodi/dimnjaci-i-stupne-kape/dimnjace-kape",
+    "description": "Betonske kape za dimnjake raznih dimenzija.",
+    "image": "/images/products/dimnjace-kape.png",
+    "category": "dimnjaci-i-stupne-kape"
+  },
+  {
+    "title": "Kape za stupove",
+    "href": "/proizvodi/dimnjaci-i-stupne-kape/kape-za-stupove",
+    "description": "Betonske kape za stupove različitih dimenzija.",
+    "image": "/images/products/kape-za-stupove.png",
+    "category": "dimnjaci-i-stupne-kape"
+  },
+  {
+    "title": "Kopanje",
+    "href": "/proizvodi/industrijski-i-gradevinski-elementi/kopanje",
+    "description": "Betonski kopanja u različitim dimenzijama.",
+    "image": "/images/products/kopanje.png",
+    "category": "industrijski-i-gradevinski-elementi"
+  },
+  {
+    "title": "Građevinski materijali",
+    "href": "/proizvodi/industrijski-i-gradevinski-elementi/gradevinski-materijali",
+    "description": "Z - kamen, daska kut, daska za građevinske primjene.",
+    "image": "/images/products/gradevinski-materijali.png",
+    "category": "industrijski-i-gradevinski-elementi"
+  },
+  {
+    "title": "Kocka i kapiteli",
+    "href": "/proizvodi/industrijski-i-gradevinski-elementi/kocka-kapiteli",
+    "description": "Betonske kocke i kapiteli za građevinske projekte.",
+    "image": "/images/products/kocka-kapiteli.png",
+    "category": "industrijski-i-gradevinski-elementi"
+  }
+]

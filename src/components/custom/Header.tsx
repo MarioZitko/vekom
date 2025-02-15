@@ -17,7 +17,7 @@ import {
 import { HeaderProps } from './types';
 import { DarkModeToggle } from './DarkModeToggle';
 
-export function Header({ products }: HeaderProps) {
+export function Header({ categories }: HeaderProps) {
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
@@ -80,9 +80,9 @@ export function Header({ products }: HeaderProps) {
                 <NavigationMenuTrigger className="text-primary">Proizvodi</NavigationMenuTrigger>
                 <NavigationMenuContent className="absolute bg-white shadow-lg rounded-md">
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                    {products.map((product) => (
-                      <ListItem key={product.title} title={product.title} href={product.href}>
-                        {product.description}
+                    {categories.map((category) => (
+                      <ListItem key={category.name} title={category.name} href={category.url}>
+                        {category.description}
                       </ListItem>
                     ))}
                   </ul>
@@ -172,12 +172,13 @@ export function Header({ products }: HeaderProps) {
 
 // List item component
 const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWithoutRef<'a'>>(
-  ({ className, title, children, ...props }, ref) => {
+  ({ className, title, children, href, ...props }, ref) => {
     return (
       <li>
         <NavigationMenuLink asChild>
           <a
             ref={ref}
+            href={href}
             className={cn(
               'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
               className,

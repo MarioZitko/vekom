@@ -23,17 +23,6 @@
   },
   {
     "id": 3,
-    "title": "Postolja",
-    "description": "Betonska postolja za stupove i druge građevinske elemente.",
-    "articleLink": "/proizvodi/postolja",
-    "images": [
-      "/images/products/postolja1.png",
-      "/images/products/postolja2.png",
-      "/images/products/postolja3.png"
-    ]
-  },
-  {
-    "id": 4,
     "title": "Rubnjaci",
     "description": "Rubnjaci različitih veličina i oblika.",
     "articleLink": "/proizvodi/rubnjaci",
@@ -44,7 +33,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 4,
     "title": "Stupovi",
     "description": "Dekorativni i nosivi betonski stupovi.",
     "articleLink": "/proizvodi/stupovi",
@@ -55,29 +44,18 @@
     ]
   },
   {
-    "id": 8,
-    "title": "Vaze",
-    "description": "Dekorativne betonske vaze za vrtove i okućnice.",
-    "articleLink": "/proizvodi/vaze",
+    "id": 5,
+    "title": "Daska",
+    "description": "Kvalitetne betonske daske za različite građevinske primjene.",
+    "articleLink": "/proizvodi/daska",
     "images": [
-      "/images/products/vaze1.png",
-      "/images/products/vaze2.png",
-      "/images/products/vaze3.png"
+      "/images/products/daska1.png",
+      "/images/products/daska2.png",
+      "/images/products/daska3.png"
     ]
   },
   {
-    "id": 9,
-    "title": "Vrtne figure",
-    "description": "Unikatne betonske figure za uređenje vrtova.",
-    "articleLink": "/proizvodi/vrtne-figure",
-    "images": [
-      "/images/products/vrtne-figure1.png",
-      "/images/products/vrtne-figure2.png",
-      "/images/products/vrtne-figure3.png"
-    ]
-  },
-  {
-    "id": 10,
+    "id": 6,
     "title": "Žardinjere",
     "description": "Betonske žardinjere u raznim oblicima i veličinama.",
     "articleLink": "/proizvodi/zardinjere",
@@ -88,14 +66,25 @@
     ]
   },
   {
-    "id": 12,
-    "title": "Utezi",
-    "description": "Industrijski betonski utezi za različite primjene.",
-    "articleLink": "/proizvodi/utezi",
+    "id": 7,
+    "title": "Vrtne figure",
+    "description": "Unikatne betonske figure za uređenje vrtova.",
+    "articleLink": "/proizvodi/vrtne-figure",
     "images": [
-      "/images/products/utezi1.png",
-      "/images/products/utezi2.png",
-      "/images/products/utezi3.png"
+      "/images/products/vrtne-figure1.png",
+      "/images/products/vrtne-figure2.png",
+      "/images/products/vrtne-figure3.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Betonski stupovi za vinograde",
+    "description": "Betonski stupovi raznih dimenzija za vinograde i voćnjake.",
+    "articleLink": "/proizvodi/vinogradarski-stupovi",
+    "images": [
+      "/images/products/vinogradarski-stupovi1.png",
+      "/images/products/vinogradarski-stupovi2.png",
+      "/images/products/vinogradarski-stupovi3.png"
     ]
   }
 ]

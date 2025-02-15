@@ -22,17 +22,17 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const products = await parseData('public/data/products.json');
+  const categories = await parseData('categories.json');
 
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}
       >
-        <Header products={products} />
+        <Header categories={categories} />
         {children}
         <Toaster />
-        <Footer /> {/* ✅ Footer is now correctly inside <body> */}
+        <Footer />
       </body>
     </html>
   );

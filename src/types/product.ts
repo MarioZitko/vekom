@@ -3,4 +3,5 @@ export interface Product {
   href: string;
   description: string;
   image: string;
+  category: string;
 }

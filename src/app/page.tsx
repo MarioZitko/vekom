@@ -3,7 +3,7 @@ import { Hero } from '@/components/custom/Hero';
 import { parseData } from '@/lib/parseData';
 
 export default async function Home() {
-  const cards = await parseData('public/data/cards.json'); // Fetch data at build/runtime
+  const cards = await parseData('cards.json'); // Fetch data at build/runtime
 
   return (
     <>

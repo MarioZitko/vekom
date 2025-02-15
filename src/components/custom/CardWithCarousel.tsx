@@ -37,7 +37,7 @@ export function CardWithCarousel({ cards }: CardWithCarouselProps) {
 
   return (
     <div
-      className={`grid gap-4 ${windowWidth < 768 ? 'grid-cols-1' : 'md:grid-cols-2 lg:grid-cols-3'} place-items-center`}
+      className={`grid gap-4 ${windowWidth < 640 ? 'grid-cols-1' : windowWidth < 1024 ? 'grid-cols-2' : windowWidth < 1280 ? 'grid-cols-3' : 'grid-cols-4'} place-items-center`}
     >
       {cards.map((card, index) => (
         <Card key={index} className="w-full max-w-[320px] sm:max-w-[360px]">
