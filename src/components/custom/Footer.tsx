@@ -8,8 +8,8 @@ export function Footer() {
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h3 className="text-xl font-semibold">VEKOM</h3>
           <p className="text-sm text-muted-foreground">
-            VEKOM je vodeći proizvođač betonskih elemenata, specijaliziran za kvalitetnu i
-            dugotrajnu gradnju s više od 30 godina iskustva.
+            VEKOM je proizvođač betonskih elemenata, koji već više od 30 godina proizvodi proizvode
+            prepoznate po svojoj kvaliteti i izdržljivosti.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             © {new Date().getFullYear()} VEKOM. Sva prava pridržana.

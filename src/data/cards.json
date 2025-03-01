@@ -1,90 +1,60 @@
 [
   {
     "id": 1,
-    "title": "Dimnjačke kape",
-    "description": "Betonske kape za dimnjake raznih dimenzija.",
-    "articleLink": "/proizvodi/dimnjace-kape",
+    "title": "AB prstenovi",
+    "description": "Izrađujemo po vašoj narudžbi i željama, uz mogućnost odabira različitih oblika i dimenzija prilagođenih vašim potrebama.",
+    "articleLink": "/proizvodi/kanalizacija/ab-prstenovi",
     "images": [
-      "/images/products/dimnjace-kape1.png",
-      "/images/products/dimnjace-kape2.png",
-      "/images/products/dimnjace-kape3.png"
+      "/images/products/kanalizacija/AB_1.jpeg",
+      "/images/products/kanalizacija/AB_2.jpeg",
+      "/images/products/kanalizacija/AB_3.jpeg"
     ]
   },
   {
     "id": 2,
-    "title": "Kanalice",
-    "description": "Mogućnost narudžbe u više dimenzija: 10x50x9 / 15x50x11 / 27x50x10 cm.",
-    "articleLink": "/proizvodi/kanalice",
+    "title": "Utezi",
+    "description": "Utezi se izrađuju po narudžbi i željama kupaca. Moguće otisnuti vlastiti logo ili odabrati boju.",
+    "articleLink": "/proizvodi/ostalo/utezi",
     "images": [
-      "/images/products/kanalica1.png",
-      "/images/products/kanalica2.png",
-      "/images/products/kanalica3.png"
+      "/images/products/utezi/uteg1.jpeg",
+      "/images/products/utezi/uteg2.jpeg",
+      "/images/products/utezi/uteg3.jpeg"
     ]
   },
   {
     "id": 3,
-    "title": "Rubnjaci",
-    "description": "Rubnjaci različitih veličina i oblika.",
-    "articleLink": "/proizvodi/rubnjaci",
+    "title": "Stupovi",
+    "description": "Različite vrste betonskih stupova i konzola.",
+    "articleLink": "/proizvodi/stupovi",
     "images": [
-      "/images/products/rubnjaci1.png",
-      "/images/products/rubnjaci2.png",
-      "/images/products/rubnjaci3.png"
+      "/images/products/stupovi/stup_cb38.png",
+      "/images/products/stupovi/stupovi_ograda.png",
+      "/images/products/stupovi/stup_28x28x98.png"
     ]
   },
   {
     "id": 4,
-    "title": "Stupovi",
-    "description": "Dekorativni i nosivi betonski stupovi.",
-    "articleLink": "/proizvodi/stupovi",
-    "images": [
-      "/images/products/stupovi1.png",
-      "/images/products/stupovi2.png",
-      "/images/products/stupovi3.png"
-    ]
+    "title": "Betonska dekorativna daska",
+    "description": "Imitacije hrastove daske. Dimenzije širine su od 20 do 25 cm, dužine 98 cm, debljina 2,5 cm.",
+    "articleLink": "/proizvodi/vrt/dekorativna-daska",
+    "images": ["/images/products/vrt/daska.jpeg"]
   },
   {
     "id": 5,
-    "title": "Daska",
-    "description": "Kvalitetne betonske daske za različite građevinske primjene.",
-    "articleLink": "/proizvodi/daska",
+    "title": "Vrt i dekoracija",
+    "description": "Pregledajte sve dekorativne proizvode za vrtove i okućnice.",
+    "articleLink": "/proizvodi/vrt-i-dekoracija",
     "images": [
-      "/images/products/daska1.png",
-      "/images/products/daska2.png",
-      "/images/products/daska3.png"
+      "/images/products/vrt/vaza_60.png",
+      "/images/products/vrt/vrtna_pipa_10.jpeg",
+      "/images/products/vrt/zardinjera_80x32.png"
     ]
   },
   {
     "id": 6,
-    "title": "Žardinjere",
-    "description": "Betonske žardinjere u raznim oblicima i veličinama.",
-    "articleLink": "/proizvodi/zardinjere",
-    "images": [
-      "/images/products/zardinjere1.png",
-      "/images/products/zardinjere2.png",
-      "/images/products/zardinjere3.png"
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Vrtne figure",
-    "description": "Unikatne betonske figure za uređenje vrtova.",
-    "articleLink": "/proizvodi/vrtne-figure",
-    "images": [
-      "/images/products/vrtne-figure1.png",
-      "/images/products/vrtne-figure2.png",
-      "/images/products/vrtne-figure3.png"
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Betonski stupovi za vinograde",
-    "description": "Betonski stupovi raznih dimenzija za vinograde i voćnjake.",
-    "articleLink": "/proizvodi/vinogradarski-stupovi",
-    "images": [
-      "/images/products/vinogradarski-stupovi1.png",
-      "/images/products/vinogradarski-stupovi2.png",
-      "/images/products/vinogradarski-stupovi3.png"
-    ]
+    "title": "Nosaci za solarne panele",
+    "description": "Betonski nosači za montažu solarnih panela.",
+    "articleLink": "/proizvodi/ostalo/nosaci-za-solarne-panele",
+    "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"]
   }
 ]

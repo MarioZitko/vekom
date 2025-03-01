@@ -1,42 +1,34 @@
 [
   {
     "id": 1,
-    "name": "Betonski Konstrukcijski Elementi",
-    "slug": "betonski-konstrukcijski-elementi",
-    "url": "/proizvodi/betonski-konstrukcijski-elementi",
-    "description": "Betonski elementi za konstrukcije, uključujući stupove, konzole i šahte.",
-    "image": "/images/proizvodi/betonski-konstrukcijski-elementi.jpg"
+    "name": "Stupovi",
+    "slug": "stupovi",
+    "url": "/proizvodi/stupovi",
+    "description": "Različite vrste betonskih stupova i konzola.",
+    "image": "/images/products/stupovi/stup_cb38.png"
   },
   {
     "id": 2,
-    "name": "Popločavanje i Odvodnja",
-    "slug": "poplocavanje-i-odvodnja",
-    "url": "/proizvodi/poplocavanje-i-odvodnja",
-    "description": "Betonski proizvodi za popločavanje i odvodnju, poput rubnjaka i kanalica.",
-    "image": "/images/proizvodi/poplocavanje-i-odvodnja.jpg"
+    "name": "Vrt i Dekoracija",
+    "slug": "vrt-i-dekoracija",
+    "url": "/proizvodi/vrt_i_dekoracija",
+    "description": "Proizvodi za uređenje vrtova i eksterijera i dekorativni elementi.",
+    "image": "/images/products/vrt/vaza_60.png"
   },
   {
     "id": 3,
-    "name": "Vrt i Dekoracija",
-    "slug": "vrt-i-dekoracija",
-    "url": "/proizvodi/vrt-i-dekoracija",
-    "description": "Betonski proizvodi za dekoraciju vrta, uključujući žardinjere i vaze.",
-    "image": "/images/proizvodi/vrt-i-dekoracija.jpg"
+    "name": "Kanalizacija i Odvodnja",
+    "slug": "kanalizacija",
+    "url": "/proizvodi/kanalizacija",
+    "description": "Elementi koji se koriste u sustavima kanalizacije i odvodnje.",
+    "image": "/images/products/kanalice/kanalicax100.png"
   },
   {
     "id": 4,
-    "name": "Dimnjaci i Stupne Kape",
-    "slug": "dimnjaci-i-stupne-kape",
-    "url": "/proizvodi/dimnjaci-i-stupne-kape",
-    "description": "Dimnjačke kape i zaštitni elementi za stupove.",
-    "image": "/images/proizvodi/dimnjaci-i-stupne-kape.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Industrijski i Građevinski Elementi",
-    "slug": "industrijski-i-gradevinski-elementi",
-    "url": "/proizvodi/industrijski-i-gradevinski-elementi",
-    "description": "Industrijski betonski elementi za različite građevinske namjene.",
-    "image": "/images/proizvodi/industrijski-i-gradevinski-elementi.jpg"
+    "name": "Ostalo",
+    "slug": "ostalo",
+    "url": "/proizvodi/ostalo",
+    "description": "Utezi, rubnjaci, nosači za solarne panele i ostali betonski elementi.",
+    "image": "/images/products/utezi/uteg3.jpeg"
   }
 ]

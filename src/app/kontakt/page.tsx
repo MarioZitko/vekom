@@ -68,8 +68,8 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <p className="text-lg text-muted-foreground">
             <strong>Vekom</strong> poduzeće možete pronaći u <strong>Klinča Selima</strong>, točnije
-            na križanju Stare Karlovačke ceste sa Kolodvorskom ulicom. Udaljeni smo 30-tak
-            kilometara od Zagreba. Točnu lokaciju možete vidjeti na interaktivnoj karti.{' '}
+            na križanju Stare Karlovačke ceste sa Kolodvorskom ulicom. Udaljeni smo 20-ak kilometara
+            od Zagreba. Točnu lokaciju možete vidjeti na interaktivnoj karti.{' '}
             <strong>Posjetite nas na našoj lokaciji!</strong>
           </p>
           <p className="mt-4 text-lg text-secondary-foreground font-semibold">
