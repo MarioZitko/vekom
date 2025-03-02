@@ -85,7 +85,7 @@ export default function ContactPage() {
         <div className="w-full max-w-3xl mb-12">
           <iframe
             className="w-full h-80 rounded-lg shadow-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.3247639888553!2d15.763301076718136!3d45.66323902167971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766715d63cc37b7%3A0x46d0f3e1bd8d36d!2sKolodvorska%201%2C%2010450%2C%20Klin%C4%8Da%20Sela%2C%20Hrvatska!5e0!3m2!1shr!2shr!4v1712051123456"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.96406178292!2d15.742476612199464!3d45.69169321811011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47643385e094fd83%3A0x39a2648d50ac925f!2sVekom%20elementi!5e0!3m2!1sen!2shr!4v1740918422803!5m2!1sen!2shr"
             loading="lazy"
           ></iframe>
         </div>

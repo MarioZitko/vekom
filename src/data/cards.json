@@ -29,7 +29,7 @@
     "images": [
       "/images/products/stupovi/stup_cb38.png",
       "/images/products/stupovi/stupovi_ograda.png",
-      "/images/products/stupovi/stup_28x28x98.png"
+      "/images/products/stupovi/kapitel49.png"
     ]
   },
   {
@@ -52,7 +52,7 @@
   },
   {
     "id": 6,
-    "title": "Nosaci za solarne panele",
+    "title": "Nosači za solarne panele",
     "description": "Betonski nosači za montažu solarnih panela.",
     "articleLink": "/proizvodi/ostalo/nosaci-za-solarne-panele",
     "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"]
