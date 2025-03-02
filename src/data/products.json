@@ -1,121 +1,388 @@
 [
   {
-    "title": "Betonski stupovi",
-    "href": "/proizvodi/betonski-konstrukcijski-elementi/betonski-stupovi",
-    "description": "Različite dimenzije betonskih stupova za konstrukcijske namjene.",
-    "image": "/images/products/betonski-stupovi.png",
-    "category": "betonski-konstrukcijski-elementi"
+    "title": "Stup CB38",
+    "href": "/proizvodi/stupovi/stup-cb38",
+    "description": "Betonski stup CB38 za različite namjene.",
+    "images": ["/images/products/stupovi/stup_cb38.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Konzole",
-    "href": "/proizvodi/betonski-konstrukcijski-elementi/konzole",
-    "description": "Betonske konzole različitih dimenzija za građevinske konstrukcije.",
-    "image": "/images/products/konzole.png",
-    "category": "betonski-konstrukcijski-elementi"
+    "title": "Stup 25x25x116 cm",
+    "href": "/proizvodi/stupovi/stup-25x25x116",
+    "description": "Betonski stup dimenzija 25x25x116 cm.",
+    "images": ["/images/products/stupovi/stup_25x25x116.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Šahte i poklopci",
-    "href": "/proizvodi/betonski-konstrukcijski-elementi/sahte-poklopci",
-    "description": "Betonske šahte i poklopci za infrastrukturne sustave.",
-    "image": "/images/products/sahte-poklopci.png",
-    "category": "betonski-konstrukcijski-elementi"
+    "title": "Stup 28x28x116 cm",
+    "href": "/proizvodi/stupovi/stup-28x28x116",
+    "description": "Betonski stup dimenzija 28x28x116 cm.",
+    "images": ["/images/products/stupovi/stup_28x28x116.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Ogradni međaši",
-    "href": "/proizvodi/betonski-konstrukcijski-elementi/ogradni-medjasi",
-    "description": "Betonski međaši različitih dimenzija.",
-    "image": "/images/products/ogradni-medjasi.png",
-    "category": "betonski-konstrukcijski-elementi"
+    "title": "Stup 28x28x98 cm",
+    "href": "/proizvodi/stupovi/stup-28x28x98",
+    "description": "Betonski stup dimenzija 28x28x98 cm.",
+    "images": ["/images/products/stupovi/stup_28x28x98.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Rubnjaci",
-    "href": "/proizvodi/poplocavanje-i-odvodnja/rubnjaci",
-    "description": "Različite vrste betonskih rubnjaka za uređenje eksterijera.",
-    "image": "/images/products/rubnjaci.png",
-    "category": "poplocavanje-i-odvodnja"
+    "title": "Stup 34x34x20 cm",
+    "href": "/proizvodi/stupovi/stup-34x34x20",
+    "description": "Betonski stup dimenzija 34x34x20 cm.",
+    "images": ["/images/products/stupovi/stup_34x34x20.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Kanalice",
-    "href": "/proizvodi/poplocavanje-i-odvodnja/kanalice",
-    "description": "Betonske kanalice za odvodnju s više dimenzija.",
-    "image": "/images/products/kanalice.png",
-    "category": "poplocavanje-i-odvodnja"
+    "title": "Stup 38x38x25 cm",
+    "href": "/proizvodi/stupovi/stup-38x38x25",
+    "description": "Betonski stup dimenzija 38x38x25 cm.",
+    "images": ["/images/products/stupovi/stup_38x38x25.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Ploče",
-    "href": "/proizvodi/poplocavanje-i-odvodnja/ploce",
-    "description": "Betonske ploče različitih dimenzija i primjena.",
-    "image": "/images/products/ploce.png",
-    "category": "poplocavanje-i-odvodnja"
+    "title": "Vinogradarski Stup",
+    "href": "/proizvodi/stupovi/vinogradarski-stup",
+    "description": "Betonski vinogradarski stup visoke otpornosti.",
+    "images": ["/images/products/stupovi/vinogradarski_stup.png"],
+    "category": "stupovi"
   },
   {
-    "title": "Žardinjere",
-    "href": "/proizvodi/vrt-i-dekoracija/zardinjere",
-    "description": "Betonske žardinjere raznih oblika i dimenzija.",
-    "image": "/images/products/zardinjere.png",
+    "title": "Kandabaler",
+    "href": "/proizvodi/stupovi/kandabaler",
+    "description": "Dekorativni betonski kandabaler za stupove.",
+    "images": ["/images/products/stupovi/kandabaler.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapitel 025",
+    "href": "/proizvodi/stupovi/kapitel-025",
+    "description": "Dekorativni betonski kapitel model 025.",
+    "images": ["/images/products/stupovi/kapitel_025.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapitel 44",
+    "href": "/proizvodi/stupovi/kapitel-44",
+    "description": "Dekorativni betonski kapitel model 44.",
+    "images": ["/images/products/stupovi/kapitel44.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapitel 49",
+    "href": "/proizvodi/stupovi/kapitel-49",
+    "description": "Dekorativni betonski kapitel model 49.",
+    "images": ["/images/products/stupovi/kapitel49.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Konzola Parapet 1",
+    "href": "/proizvodi/stupovi/konzola-parapet-1",
+    "description": "Betonska konzola model Parapet 1.",
+    "images": ["/images/products/stupovi/konzola_parapet1.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Konzola Parapet 2",
+    "href": "/proizvodi/stupovi/konzola-parapet-2",
+    "description": "Betonska konzola model Parapet 2.",
+    "images": ["/images/products/stupovi/konzola_parapet2.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Baza BA 50",
+    "href": "/proizvodi/stupovi/baza-ba-50",
+    "description": "Betonska baza model BA 50.",
+    "images": ["/images/products/stupovi/baza_ba_50.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Stupovi Ograda",
+    "href": "/proizvodi/stupovi/stupovi-ograda",
+    "description": "Betonski stupovi za ograde.",
+    "images": ["/images/products/stupovi/stupovi_ograda.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapa za Stup",
+    "href": "/proizvodi/stupovi/kapa-za-stup",
+    "description": "Betonska kapa za stup različitih dimenzija.",
+    "images": ["/images/products/kape/kapa_za_stup.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapa 40x40 cm",
+    "href": "/proizvodi/stupovi/kapa-40x40",
+    "description": "Betonska kapa dimenzija 40x40 cm.",
+    "images": ["/images/products/kape/kapa_40x40.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapa 45x45 cm",
+    "href": "/proizvodi/stupovi/kapa-45x45",
+    "description": "Betonska kapa dimenzija 45x45 cm.",
+    "images": ["/images/products/kape/kapa_45x45.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Kapa 50x50 cm",
+    "href": "/proizvodi/stupovi/kapa-50x50",
+    "description": "Betonska kapa dimenzija 50x50 cm.",
+    "images": ["/images/products/kape/kapa_50x50.png"],
+    "category": "stupovi"
+  },
+  {
+    "title": "Cvjetnjak 58x58x33",
+    "href": "/proizvodi/vrt-i-dekoracija/cvjetnjak-58x58x33",
+    "description": "Dekorativni betonski cvjetnjak dimenzija 58x58x33 cm.",
+    "images": ["/images/products/vrt/cvjetnjak_58_58_33.jpeg"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Vaze",
-    "href": "/proizvodi/vrt-i-dekoracija/vaze",
-    "description": "Dekorativne betonske vaze za vrtove i okućnice.",
-    "image": "/images/products/vaze.png",
+    "title": "Daska",
+    "href": "/proizvodi/vrt-i-dekoracija/daska",
+    "description": "Betonska daska za vrtne dekoracije.",
+    "images": ["/images/products/vrt/daska.jpeg"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Parkirne kugle",
-    "href": "/proizvodi/vrt-i-dekoracija/parkirne-kugle",
-    "description": "Betonske parkirne kugle za urbane prostore.",
-    "image": "/images/products/parkirne-kugle.png",
+    "title": "Vaza",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza",
+    "description": "Dekorativna betonska vaza.",
+    "images": ["/images/products/vrt/vaza.png"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Dekorativni elementi",
-    "href": "/proizvodi/vrt-i-dekoracija/dekorativni-elementi",
-    "description": "Betonski dekorativni elementi kao što su kandelaberi i figure.",
-    "image": "/images/products/dekorativni-elementi.png",
+    "title": "Vaza 10",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-10",
+    "description": "Dekorativna betonska vaza model 10.",
+    "images": ["/images/products/vrt/vaza_10.png"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Vrtne pipe",
-    "href": "/proizvodi/vrt-i-dekoracija/vrtne-pipe",
-    "description": "Betonske vrtne pipe različitih dizajna.",
-    "image": "/images/products/vrtne-pipe.png",
+    "title": "Vaza 20",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-20",
+    "description": "Dekorativna betonska vaza model 20.",
+    "images": ["/images/products/vrt/vaza_20.png"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Dimnjačke kape",
-    "href": "/proizvodi/dimnjaci-i-stupne-kape/dimnjace-kape",
-    "description": "Betonske kape za dimnjake raznih dimenzija.",
-    "image": "/images/products/dimnjace-kape.png",
-    "category": "dimnjaci-i-stupne-kape"
+    "title": "Vaza 60",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-60",
+    "description": "Dekorativna betonska vaza model 60.",
+    "images": ["/images/products/vrt/vaza_60.png"],
+    "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Kape za stupove",
-    "href": "/proizvodi/dimnjaci-i-stupne-kape/kape-za-stupove",
-    "description": "Betonske kape za stupove različitih dimenzija.",
-    "image": "/images/products/kape-za-stupove.png",
-    "category": "dimnjaci-i-stupne-kape"
+    "title": "Vaza 70",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-70",
+    "description": "Dekorativna betonska vaza model 70.",
+    "images": ["/images/products/vrt/vaza_70.png"],
+    "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Kopanje",
-    "href": "/proizvodi/industrijski-i-gradevinski-elementi/kopanje",
-    "description": "Betonski kopanja u različitim dimenzijama.",
-    "image": "/images/products/kopanje.png",
-    "category": "industrijski-i-gradevinski-elementi"
+    "title": "Vaza 80",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-80",
+    "description": "Dekorativna betonska vaza model 80.",
+    "images": ["/images/products/vrt/vaza_80.png"],
+    "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Građevinski materijali",
-    "href": "/proizvodi/industrijski-i-gradevinski-elementi/gradevinski-materijali",
-    "description": "Z - kamen, daska kut, daska za građevinske primjene.",
-    "image": "/images/products/gradevinski-materijali.png",
-    "category": "industrijski-i-gradevinski-elementi"
+    "title": "Vaza 90",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-90",
+    "description": "Dekorativna betonska vaza model 90.",
+    "images": ["/images/products/vrt/vaza_90.png"],
+    "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Kocka i kapiteli",
-    "href": "/proizvodi/industrijski-i-gradevinski-elementi/kocka-kapiteli",
-    "description": "Betonske kocke i kapiteli za građevinske projekte.",
-    "image": "/images/products/kocka-kapiteli.png",
-    "category": "industrijski-i-gradevinski-elementi"
+    "title": "Vaza 100",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-100",
+    "description": "Dekorativna betonska vaza model 100.",
+    "images": ["/images/products/vrt/vaza_100.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Vaza Korpa",
+    "href": "/proizvodi/vrt-i-dekoracija/vaza-korpa",
+    "description": "Dekorativna betonska vaza u obliku korpe.",
+    "images": ["/images/products/vrt/vaza_korpa.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Vrtna Pipa 10",
+    "href": "/proizvodi/vrt-i-dekoracija/vrtna-pipa-10",
+    "description": "Betonska vrtna pipa model 10.",
+    "images": ["/images/products/vrt/vrtna_pipa_10.jpeg"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Žardinjera 100x36",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjera-100x36",
+    "description": "Betonska žardinjera dimenzija 100x36 cm.",
+    "images": ["/images/products/vrt/zardinjera_100x36.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Žardinjera 150x61x40",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjera-150x61x40",
+    "description": "Betonska žardinjera dimenzija 150x61x40 cm.",
+    "images": ["/images/products/vrt/zardinjera_150x61x40.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Žardinjera 150x61x61",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjera-150x61x61",
+    "description": "Betonska žardinjera dimenzija 150x61x61 cm.",
+    "images": ["/images/products/vrt/zardinjera_150x61x61.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Žardinjera 80x23",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjera-80x23",
+    "description": "Betonska žardinjera dimenzija 80x23 cm.",
+    "images": ["/images/products/vrt/zardinjera_80x23.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "Žardinjera 80x32",
+    "href": "/proizvodi/vrt-i-dekoracija/zardinjera-80x32",
+    "description": "Betonska žardinjera dimenzija 80x32 cm.",
+    "images": ["/images/products/vrt/zardinjera_80x32.png"],
+    "category": "vrt-i-dekoracija"
+  },
+  {
+    "title": "AB Prstenovi",
+    "href": "/proizvodi/kanalizacija/ab-prstenovi",
+    "description": "Betonski AB prstenovi različitih dimenzija.",
+    "images": [
+      "/images/products/kanalizacija/AB_1.jpeg",
+      "/images/products/kanalizacija/AB_2.jpeg",
+      "/images/products/kanalizacija/AB_3.jpeg"
+    ],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Šaht Vodo Okno",
+    "href": "/proizvodi/kanalizacija/saht-vodo-okno",
+    "description": "Betonski šaht model Vodo Okno.",
+    "images": ["/images/products/kanalizacija/saht_vodo_okno.jpeg"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Vodomjerni Šaht Dno",
+    "href": "/proizvodi/kanalizacija/vodomjerni-saht-dno",
+    "description": "Betonski vodomjerni šaht dno.",
+    "images": ["/images/products/kanalizacija/vodomjenri_saht_dno.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Vodomjerni Šaht",
+    "href": "/proizvodi/kanalizacija/vodomjerni-saht",
+    "description": "Betonski vodomjerni šaht za kanalizacione sisteme.",
+    "images": ["/images/products/kanalizacija/vodomjerni_saht.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Kanalica 10x50x9 cm",
+    "href": "/proizvodi/kanalizacija/kanalica-10x50x9",
+    "description": "Betonska kanalica dimenzija 10x50x9 cm.",
+    "images": ["/images/products/kanalice/kanalica_10x50x9.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Kanalica 15x50x11 cm",
+    "href": "/proizvodi/kanalizacija/kanalica-15x50x11",
+    "description": "Betonska kanalica dimenzija 15x50x11 cm.",
+    "images": ["/images/products/kanalice/kanalica_15x50x11.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Kanalica 27x50x10 cm",
+    "href": "/proizvodi/kanalizacija/kanalica-27x50x10",
+    "description": "Betonska kanalica dimenzija 27x50x10 cm.",
+    "images": ["/images/products/kanalice/kanalica_27x50x10.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Kanalica 40x80x11 cm",
+    "href": "/proizvodi/kanalizacija/kanalica-40x80x11",
+    "description": "Betonska kanalica dimenzija 40x80x11 cm.",
+    "images": ["/images/products/kanalice/kanalica_40x80x11.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Kanalice x100",
+    "href": "/proizvodi/kanalizacija/kanalice-x100",
+    "description": "Betonske kanalice model x100 za odvodnju.",
+    "images": ["/images/products/kanalice/kanalicax100.png"],
+    "category": "kanalizacija"
+  },
+  {
+    "title": "Betonski Utezi",
+    "href": "/proizvodi/ostalo/utezi",
+    "description": "Industrijski betonski utezi za različite primjene.",
+    "images": [
+      "/images/products/utezi/uteg1.jpeg",
+      "/images/products/utezi/uteg2.jpeg",
+      "/images/products/utezi/uteg3.jpeg"
+    ],
+    "category": "ostalo"
+  },
+  {
+    "title": "Betonska Kopanja",
+    "href": "/proizvodi/ostalo/kopanja",
+    "description": "Betonska kopanja za različite namjene.",
+    "images": ["/images/products/ostalo/kopanja.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Betonska Kugla",
+    "href": "/proizvodi/ostalo/kugla",
+    "description": "Dekorativna betonska kugla za eksterijere.",
+    "images": ["/images/products/ostalo/kugla.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Parking Kugla 10",
+    "href": "/proizvodi/ostalo/parking-kugla-10",
+    "description": "Betonska parkirna kugla model 10.",
+    "images": ["/images/products/ostalo/parking_10.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Parking Kugla 20",
+    "href": "/proizvodi/ostalo/parking-kugla-20",
+    "description": "Betonska parkirna kugla model 20.",
+    "images": ["/images/products/ostalo/parking_20.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Solarni Panel Nosač",
+    "href": "/proizvodi/ostalo/solarni-panel-nosac",
+    "description": "Betonski nosač za solarne panele.",
+    "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Rubnjak 10x20x100 cm",
+    "href": "/proizvodi/ostalo/rubnjak-10x20x100",
+    "description": "Betonski rubnjak dimenzija 10x20x100 cm.",
+    "images": ["/images/products/rubnjak/rubnj_10x20x100.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Rubnjak 7x20x100 cm",
+    "href": "/proizvodi/ostalo/rubnjak-7x20x100",
+    "description": "Betonski rubnjak dimenzija 7x20x100 cm.",
+    "images": ["/images/products/rubnjak/rubnj_7x20x100.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Rubnjak 8x20x100 cm",
+    "href": "/proizvodi/ostalo/rubnjak-8x20x100",
+    "description": "Betonski rubnjak dimenzija 8x20x100 cm.",
+    "images": ["/images/products/rubnjak/rubnj_8x20x100.png"],
+    "category": "ostalo"
   }
 ]

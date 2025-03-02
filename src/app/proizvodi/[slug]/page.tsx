@@ -31,7 +31,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                 key={product.title}
                 title={product.title}
                 href={product.href}
-                image={product.image}
+                image={product.images[0]}
               />
             ))
           ) : (

@@ -2,6 +2,13 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { parseData } from '@/lib/parseData';
 import { Product } from '@/types/product';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 export default async function ProductPage({
   params: rawParams,
@@ -32,11 +39,33 @@ export default async function ProductPage({
   return (
     <main className="container mx-auto px-6 lg:px-12 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Image Section (Left) */}
+        {/* Image Carousel Section (Left) */}
         <div className="w-full">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-lg">
-            <Image src={product.image} alt={product.title} fill className="object-cover" priority />
-          </div>
+          <Carousel className="w-full max-w-lg mx-auto" opts={{ align: 'start', loop: true }}>
+            <CarouselContent>
+              {product.images.map((img, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                      src={img}
+                      alt={`${product.title} - Image ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            {/* Hide arrows if only one image */}
+            {product.images.length > 1 && (
+              <>
+                <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10" />
+                <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10" />
+              </>
+            )}
+          </Carousel>
         </div>
 
         {/* Content Section (Right) */}
