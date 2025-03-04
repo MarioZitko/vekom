@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Stupovi",
+    "slug": "stupovi",
+    "url": "/proizvodi/stupovi",
+    "description": "Različite vrste betonskih stupova i konzola.",
+    "image": "/images/products/stupovi/stup_cb38.png"
+  },
+  {
+    "id": 2,
+    "name": "Vrt i Dekoracija",
+    "slug": "vrt-i-dekoracija",
+    "url": "/proizvodi/vrt-i-dekoracija",
+    "description": "Proizvodi za uređenje vrtova i eksterijera i dekorativni elementi.",
+    "image": "/images/products/vrt/vaza_60.png"
+  },
+  {
+    "id": 3,
+    "name": "Kanalizacija i Odvodnja",
+    "slug": "kanalizacija",
+    "url": "/proizvodi/kanalizacija",
+    "description": "Elementi koji se koriste u sustavima kanalizacije i odvodnje.",
+    "image": "/images/products/kanalice/kanalicax100.png"
+  },
+  {
+    "id": 4,
+    "name": "Ostalo",
+    "slug": "ostalo",
+    "url": "/proizvodi/ostalo",
+    "description": "Utezi, rubnjaci, nosači za solarne panele i ostali betonski elementi.",
+    "image": "/images/products/utezi/uteg3.jpeg"
+  }
+]

@@ -62,16 +62,18 @@ export function ContactDialog({ productName }: ContactDialogProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>
+        <Button className="text-xs sm:text-sm px-4 py-2">
           <Send className="mr-2 w-4 h-4" />
           Pošalji upit!
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-lg">
-        <DialogTitle>{productName} - Upit s web stranice</DialogTitle>
+      <DialogContent className="max-w-xs sm:max-w-sm p-4 sm:p-5">
+        <DialogTitle className="text-base sm:text-lg font-semibold">
+          {productName} - Upit s web stranice
+        </DialogTitle>
 
-        <form onSubmit={handleSubmit} className="grid gap-4">
+        <form onSubmit={handleSubmit} className="grid gap-3 sm:gap-4">
           <div>
             <Label htmlFor="name">Ime i prezime</Label>
             <Input
@@ -82,6 +84,7 @@ export function ContactDialog({ productName }: ContactDialogProps) {
               placeholder="Unesite vaše ime"
               value={formData.name}
               onChange={handleChange}
+              className="h-9 text-sm"
             />
           </div>
 
@@ -95,6 +98,7 @@ export function ContactDialog({ productName }: ContactDialogProps) {
               placeholder="Unesite vaš email"
               value={formData.email}
               onChange={handleChange}
+              className="h-9 text-sm"
             />
           </div>
 
@@ -108,6 +112,7 @@ export function ContactDialog({ productName }: ContactDialogProps) {
               placeholder="Unesite broj telefona"
               value={formData.contact}
               onChange={handleChange}
+              className="h-9 text-sm"
             />
           </div>
 
@@ -120,16 +125,16 @@ export function ContactDialog({ productName }: ContactDialogProps) {
               placeholder="Napišite svoju poruku..."
               value={formData.message}
               onChange={handleChange}
-              className="h-32"
+              className="h-24 text-sm"
             />
           </div>
 
-          <Button type="submit" disabled={isLoading}>
+          <Button type="submit" disabled={isLoading} className="text-sm h-10">
             {isLoading ? 'Slanje...' : 'Pošalji'}
           </Button>
 
-          {success && <p className="text-green-600">{success}</p>}
-          {error && <p className="text-red-600">{error}</p>}
+          {success && <p className="text-green-600 text-sm">{success}</p>}
+          {error && <p className="text-red-600 text-sm">{error}</p>}
         </form>
       </DialogContent>
     </Dialog>
