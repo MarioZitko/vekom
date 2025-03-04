@@ -45,12 +45,12 @@ export default async function ProductPage({
             <CarouselContent>
               {product.images.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-lg">
+                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
                     <Image
                       src={img}
                       alt={`${product.title} - Image ${index + 1}`}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       priority
                     />
                   </div>

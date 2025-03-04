@@ -3,14 +3,22 @@ import { Product } from '@/types/product';
 import { Category } from '@/types/category';
 import { ProductCard } from '@/components/custom/ProductCard';
 
-export default async function CategoryPage({ params }: { params: { slug: string } }) {
+export default async function CategoryPage({ params }: { params: { slug?: string } }) {
+  // Ensure params are awaited correctly
+  const awaitedParams = await Promise.resolve(params);
+
+  if (!awaitedParams?.slug) {
+    return <div className="text-center py-12 text-xl">Kategorija nije pronađena.</div>;
+  }
+
   const products: Product[] = await parseData('products.json');
   const categories: Category[] = await parseData('categories.json');
 
-  const category = categories.find((cat) => cat.slug === params.slug);
+  // Ensure category lookup is performed correctly
+  const category = categories.find((cat) => cat.slug === awaitedParams.slug);
   if (!category) return <div className="text-center py-12 text-xl">Kategorija nije pronađena.</div>;
 
-  const filteredProducts = products.filter((product) => product.category === params.slug);
+  const filteredProducts = products.filter((product) => product.category === awaitedParams.slug);
 
   return (
     <>
