@@ -36,7 +36,7 @@
     "id": 4,
     "title": "Betonska dekorativna daska",
     "description": "Imitacije hrastove daske. Dimenzije širine su od 20 do 25 cm, dužine 98 cm, debljina 2,5 cm.",
-    "articleLink": "/proizvodi/vrt/dekorativna-daska",
+    "articleLink": "/proizvodi/vrt-i-dekoracija/daska",
     "images": ["/images/products/vrt/daska.jpeg"]
   },
   {
@@ -54,7 +54,7 @@
     "id": 6,
     "title": "Nosači za solarne panele",
     "description": "Betonski nosači za montažu solarnih panela.",
-    "articleLink": "/proizvodi/ostalo/nosaci-za-solarne-panele",
+    "articleLink": "/proizvodi/ostalo/solarni-panel-nosac",
     "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"]
   }
 ]

@@ -108,27 +108,6 @@
     "category": "stupovi"
   },
   {
-    "title": "Dimjačka kapa četvrtasta 40x40 cm",
-    "href": "/proizvodi/ostalo/kapa-40x40",
-    "description": "Betonska kapa dimenzija 40x40 cm.",
-    "images": ["/images/products/kape/kapa_40x40.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Dimjačka kapa četvrtasta 45x45 cm",
-    "href": "/proizvodi/ostalo/kapa-45x45",
-    "description": "Betonska kapa dimenzija 45x45 cm.",
-    "images": ["/images/products/kape/kapa_45x45.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Dimjačka kapa četvrtasta 50x50 cm",
-    "href": "/proizvodi/ostalo/kapa-50x50",
-    "description": "Betonska kapa dimenzija 50x50 cm.",
-    "images": ["/images/products/kape/kapa_50x50.png"],
-    "category": "ostalo"
-  },
-  {
     "title": "Cvjetnjak 58x58x33",
     "href": "/proizvodi/vrt-i-dekoracija/cvjetnjak-58x58x33",
     "description": "Slaganje iz Z blokova; Mogućnost slaganja u više veličina; Izrada iz bijelog ili sivog cementa.",
@@ -250,7 +229,7 @@
   {
     "title": "AB Prstenovi",
     "href": "/proizvodi/kanalizacija/ab-prstenovi",
-    "description": "Betonski AB prstenovi različitih dimenzija.",
+    "description": "Betonski AB prstenovi različitih dimenzija (moguća izrada po narudžbi); Mogu biti okrugli ili četvrtasti, s okruglim ili četvrtastim otvorom; Izrađujemo AB rasteretne prstene slijedećih dimenzija: 100x100x15 cm; 110x110x15 cm; 120x120x15 cm; 120x120x20 cm; 133x133x20 cm; 140x140x20 cm; 163x163x20 cm; 180x180x20 cm; 202x202x20 cm; 130x130x25 cm; 163x163x30 cm",
     "images": [
       "/images/products/kanalizacija/AB_1.jpeg",
       "/images/products/kanalizacija/AB_2.jpeg",
@@ -259,23 +238,23 @@
     "category": "kanalizacija"
   },
   {
-    "title": "Šaht Vodo Okno",
+    "title": "Šaht za vodomjerno okno",
     "href": "/proizvodi/kanalizacija/saht-vodo-okno",
-    "description": "Betonski šaht model Vodo Okno.",
+    "description": "Betonski šaht model Vodo Okno.; D: 140, Š: 100, V: 120 cm – Vanjske dimenzije; D: 120, Š: 80, V: 110 cm – Unutarnje dimenzije; Po zahtjevu kupca isporučujemo ploču za dno 140x100x10 cm",
     "images": ["/images/products/kanalizacija/saht_vodo_okno.jpeg"],
     "category": "kanalizacija"
   },
   {
-    "title": "Vodomjerni Šaht Dno",
+    "title": "Vodomjerni šaht s dnom",
     "href": "/proizvodi/kanalizacija/vodomjerni-saht-dno",
-    "description": "Betonski vodomjerni šaht dno.",
+    "description": "Betonski vodomjerni šaht s dnom.; Dimenzije: 120x120x120 cm",
     "images": ["/images/products/kanalizacija/vodomjenri_saht_dno.png"],
     "category": "kanalizacija"
   },
   {
     "title": "Vodomjerni Šaht",
     "href": "/proizvodi/kanalizacija/vodomjerni-saht",
-    "description": "Betonski vodomjerni šaht za kanalizacione sisteme.",
+    "description": "Betonski vodomjerni šaht za kanalizacione sisteme.; Dimezije: 120x120x110 cm",
     "images": ["/images/products/kanalizacija/vodomjerni_saht.png"],
     "category": "kanalizacija"
   },
@@ -308,56 +287,28 @@
     "category": "kanalizacija"
   },
   {
-    "title": "Kanalice x100",
+    "title": "Kanalice 100 sa rešetkom",
     "href": "/proizvodi/kanalizacija/kanalice-x100",
-    "description": "Betonske kanalice model x100 za odvodnju.",
+    "description": "Betonske kanalice dimenzija: ;Dužina: 100 cm; Visina: 22 cm; Širina: 28 cm",
     "images": ["/images/products/kanalice/kanalicax100.png"],
     "category": "kanalizacija"
   },
   {
+    "title": "Nosači za solarne panele",
+    "href": "/proizvodi/ostalo/solarni-panel-nosac",
+    "description": "Betonski nosači za solarne panele.; Izrađuju se po željama i dimenzijama kupca",
+    "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"],
+    "category": "ostalo"
+  },
+  {
     "title": "Betonski Utezi",
     "href": "/proizvodi/ostalo/utezi",
-    "description": "Industrijski betonski utezi za različite primjene.",
+    "description": "Industrijski betonski utezi za različite primjene.; Utezi se izrađuju po narudžbi; Mogućnost tiska logotipa (primjer logo poduzeća); Dostupni u različitim bojama (pomoću korištenja aditiva); Prilagođeni vašim željama.",
     "images": [
       "/images/products/utezi/uteg1.jpeg",
       "/images/products/utezi/uteg2.jpeg",
       "/images/products/utezi/uteg3.jpeg"
     ],
-    "category": "ostalo"
-  },
-  {
-    "title": "Betonska Kopanja",
-    "href": "/proizvodi/ostalo/kopanja",
-    "description": "Betonska kopanja za različite namjene.",
-    "images": ["/images/products/ostalo/kopanja.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Betonska Kugla",
-    "href": "/proizvodi/ostalo/kugla",
-    "description": "Dekorativna betonska kugla za eksterijere.",
-    "images": ["/images/products/ostalo/kugla.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Parking Kugla 10",
-    "href": "/proizvodi/ostalo/parking-kugla-10",
-    "description": "Betonska parkirna kugla model 10.",
-    "images": ["/images/products/ostalo/parking_10.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Parking Kugla 20",
-    "href": "/proizvodi/ostalo/parking-kugla-20",
-    "description": "Betonska parkirna kugla model 20.",
-    "images": ["/images/products/ostalo/parking_20.png"],
-    "category": "ostalo"
-  },
-  {
-    "title": "Solarni Panel Nosač",
-    "href": "/proizvodi/ostalo/solarni-panel-nosac",
-    "description": "Betonski nosač za solarne panele.",
-    "images": ["/images/products/ostalo/sol_panel_nosac.jpeg"],
     "category": "ostalo"
   },
   {
@@ -379,6 +330,55 @@
     "href": "/proizvodi/ostalo/rubnjak-8x20x100",
     "description": "Betonski rubnjak dimenzija 8x20x100 cm.",
     "images": ["/images/products/rubnjak/rubnj_8x20x100.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Betonska Kopanja",
+    "href": "/proizvodi/ostalo/kopanja",
+    "description": "Betonska kopanja za različite namjene; Dostupne u različitim dimenzijama duljine: ;60 cm, 80 cm, 100 cm, 120 cm, 160 cm, 200 cm",
+    "images": ["/images/products/ostalo/kopanja.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Betonska Kugla",
+    "href": "/proizvodi/ostalo/kugla",
+    "description": "Dostupna u različitim širinama: ;10 cm ;20 cm ;30 cm",
+    "images": ["/images/products/ostalo/kugla.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Parking Kugla 10",
+    "href": "/proizvodi/ostalo/parking-kugla-10",
+    "description": "Betonska parkirna kugla; Dimenzije: 50×50 cm, visina 45 cm",
+    "images": ["/images/products/ostalo/parking_10.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Parking Kugla 20",
+    "href": "/proizvodi/ostalo/parking-kugla-20",
+    "description": "Betonska parkirna kugla; Dimenzije: 50×50 cm, visina 65 cm",
+    "images": ["/images/products/ostalo/parking_20.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Dimjačka kapa četvrtasta 40x40 cm",
+    "href": "/proizvodi/ostalo/kapa-40x40",
+    "description": "Betonska kapa dimenzija 40x40 cm.",
+    "images": ["/images/products/kape/kapa_40x40.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Dimjačka kapa četvrtasta 45x45 cm",
+    "href": "/proizvodi/ostalo/kapa-45x45",
+    "description": "Betonska kapa dimenzija 45x45 cm.",
+    "images": ["/images/products/kape/kapa_45x45.png"],
+    "category": "ostalo"
+  },
+  {
+    "title": "Dimjačka kapa četvrtasta 50x50 cm",
+    "href": "/proizvodi/ostalo/kapa-50x50",
+    "description": "Betonska kapa dimenzija 50x50 cm.",
+    "images": ["/images/products/kape/kapa_50x50.png"],
     "category": "ostalo"
   }
 ]
