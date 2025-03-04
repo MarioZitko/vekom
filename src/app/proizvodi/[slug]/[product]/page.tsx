@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { parseData } from '@/lib/parseData';
@@ -10,39 +11,51 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug?: string; product?: string };
+}): Promise<Metadata> {
+  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+  const products: Product[] = await parseData('products.json');
+
+  const product = products.find((p) => p.href.endsWith(`/${awaitedParams.product}`));
+
+  if (!product) return notFound();
+
+  return {
+    title: `${product.title} - Vekom Građevinski Elementi`,
+    description: product.description.split(';')[0], // Use first sentence as meta description
+    openGraph: {
+      title: product.title,
+      description: product.description.split(';')[0],
+      images: product.images.map((img) => ({ url: img, width: 800, height: 600 })),
+    },
+  };
+}
+
 export default async function ProductPage({
   params: rawParams,
 }: {
   params: { slug?: string; product?: string };
 }) {
-  // ✅ Ensure params are awaited correctly
-  const params = await Promise.resolve(rawParams);
+  const params = await Promise.resolve(rawParams); // ✅ Ensure params are awaited
 
   if (!params.slug || !params.product) {
     return notFound();
   }
 
-  // ✅ Load product data asynchronously
   const products: Product[] = await parseData('products.json');
+  const product = products.find((p) => p.href.endsWith(`/${params.product}`));
 
-  // ✅ Proper slug and product slug decoding
-  const categorySlug = decodeURIComponent(params.slug);
-  const productSlug = decodeURIComponent(params.product);
+  if (!product) return notFound();
 
-  // ✅ Improved product lookup logic
-  const product = products.find(
-    (p) => p.category === categorySlug && p.href.endsWith(`/${productSlug}`),
-  );
-
-  if (!product) return notFound(); // If product doesn't exist, return 404
-
-  // ✅ Split the description by ";", treating each segment as a bullet point
   const descriptionPoints = product.description.split(';').map((point) => point.trim());
 
   return (
     <main className="container mx-auto px-6 lg:px-12 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        {/* Image Carousel Section (Left) */}
+        {/* Image Carousel Section */}
         <div className="w-full">
           <Carousel className="w-full max-w-lg mx-auto" opts={{ align: 'start', loop: true }}>
             <CarouselContent>
@@ -61,7 +74,7 @@ export default async function ProductPage({
               ))}
             </CarouselContent>
 
-            {/* Hide arrows if only one image */}
+            {/* Show navigation arrows if more than one image */}
             {product.images.length > 1 && (
               <>
                 <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10" />
@@ -71,7 +84,7 @@ export default async function ProductPage({
           </Carousel>
         </div>
 
-        {/* Content Section (Right) */}
+        {/* Product Details Section */}
         <div className="w-full">
           <h1 className="text-2xl sm:text-3xl font-bold text-primary">{product.title}</h1>
 

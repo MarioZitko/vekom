@@ -1,22 +1,37 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { parseData } from '@/lib/parseData';
 import { Product } from '@/types/product';
 import { Category } from '@/types/category';
 import { ProductCard } from '@/components/custom/ProductCard';
 
-export default async function CategoryPage({ params }: { params: { slug?: string } }) {
-  // Ensure params are awaited correctly
-  const awaitedParams = await Promise.resolve(params);
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug?: string };
+}): Promise<Metadata> {
+  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+  const categories: Category[] = await parseData('categories.json');
+  const category = categories.find((cat) => cat.slug === awaitedParams.slug);
 
-  if (!awaitedParams?.slug) {
-    return <div className="text-center py-12 text-xl">Kategorija nije pronađena.</div>;
-  }
+  if (!category) return notFound();
+
+  return {
+    title: `${category.name} - Vekom Građevinski Elementi`,
+    description: `Pregledajte visokokvalitetne proizvode u kategoriji ${category.name}.`,
+  };
+}
+
+export default async function CategoryPage({ params }: { params: { slug?: string } }) {
+  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+
+  if (!awaitedParams?.slug) return notFound();
 
   const products: Product[] = await parseData('products.json');
   const categories: Category[] = await parseData('categories.json');
 
-  // Ensure category lookup is performed correctly
   const category = categories.find((cat) => cat.slug === awaitedParams.slug);
-  if (!category) return <div className="text-center py-12 text-xl">Kategorija nije pronađena.</div>;
+  if (!category) return notFound();
 
   const filteredProducts = products.filter((product) => product.category === awaitedParams.slug);
 

@@ -1,9 +1,15 @@
 import { CardWithCarousel } from '@/components/custom/CardWithCarousel';
 import { Hero } from '@/components/custom/Hero';
 import { parseData } from '@/lib/parseData';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Vekom - Kvalitetni građevinski elementi',
+  description: 'Vekom nudi vrhunske građevinske elemente, otporne i dugotrajne.',
+};
 
 export default async function Home() {
-  const cards = await parseData('cards.json'); // Fetch data at build/runtime
+  const cards = await parseData('cards.json');
 
   return (
     <>
