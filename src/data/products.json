@@ -2,7 +2,7 @@
   {
     "title": "Stup CB38",
     "href": "/proizvodi/stupovi/stup-cb38",
-    "description": "Betonski stup CB38 za različite namjene.",
+    "description": "Visina: 73 cm; Baza: 40×40 cm",
     "images": ["/images/products/stupovi/stup_cb38.png"],
     "category": "stupovi"
   },
@@ -30,14 +30,14 @@
   {
     "title": "Stup 34x34x20 cm",
     "href": "/proizvodi/stupovi/stup-34x34x20",
-    "description": "Betonski stup dimenzija 34x34x20 cm.",
+    "description": "Dimenzija kocke: 34x34x20 cm",
     "images": ["/images/products/stupovi/stup_34x34x20.png"],
     "category": "stupovi"
   },
   {
     "title": "Stup 38x38x25 cm",
     "href": "/proizvodi/stupovi/stup-38x38x25",
-    "description": "Betonski stup dimenzija 38x38x25 cm.",
+    "description": "Dimenzija kocke: 38x38x25 cm.",
     "images": ["/images/products/stupovi/stup_38x38x25.png"],
     "category": "stupovi"
   },
@@ -51,7 +51,7 @@
   {
     "title": "Kandabaler",
     "href": "/proizvodi/stupovi/kandabaler",
-    "description": "Dekorativni betonski kandabaler za stupove.",
+    "description": "Visina: 160 cm; Baza: 35×35 cm",
     "images": ["/images/products/stupovi/kandabaler.png"],
     "category": "stupovi"
   },
@@ -65,189 +65,185 @@
   {
     "title": "Kapitel 44",
     "href": "/proizvodi/stupovi/kapitel-44",
-    "description": "Dekorativni betonski kapitel model 44.",
+    "description": "Dekorativni betonski kapitel dimenzija: 44×44 cm.",
     "images": ["/images/products/stupovi/kapitel44.png"],
     "category": "stupovi"
   },
   {
     "title": "Kapitel 49",
     "href": "/proizvodi/stupovi/kapitel-49",
-    "description": "Dekorativni betonski kapitel model 49.",
+    "description": "Dekorativni betonski kapitel dimenzija: 49×49 cm.",
     "images": ["/images/products/stupovi/kapitel49.png"],
     "category": "stupovi"
   },
   {
-    "title": "Konzola Parapet 1",
-    "href": "/proizvodi/stupovi/konzola-parapet-1",
-    "description": "Betonska konzola model Parapet 1.",
-    "images": ["/images/products/stupovi/konzola_parapet1.png"],
-    "category": "stupovi"
-  },
-  {
-    "title": "Konzola Parapet 2",
-    "href": "/proizvodi/stupovi/konzola-parapet-2",
-    "description": "Betonska konzola model Parapet 2.",
-    "images": ["/images/products/stupovi/konzola_parapet2.png"],
+    "title": "Konzole za parapet",
+    "href": "/proizvodi/stupovi/konzola-parapet",
+    "description": "Konzole za parapet dostupne u različitim dimenzijama: ;113x25x7 cm; 150x25x5,5 cm; 250x25x5,5 cm; 150x30x7,5 cm; 150x35x7,0 cm; 150x40x10 cm",
+    "images": [
+      "/images/products/stupovi/konzola_parapet1.png",
+      "/images/products/stupovi/konzola_parapet2.png"
+    ],
     "category": "stupovi"
   },
   {
     "title": "Baza BA 50",
     "href": "/proizvodi/stupovi/baza-ba-50",
-    "description": "Betonska baza model BA 50.",
+    "description": "Betonska baza dimenzija: ;Visina: 45 cm; Baza: 42×42 cm",
     "images": ["/images/products/stupovi/baza_ba_50.png"],
     "category": "stupovi"
   },
   {
-    "title": "Stupovi Ograda",
+    "title": "Stupovi za ogradu",
     "href": "/proizvodi/stupovi/stupovi-ograda",
-    "description": "Betonski stupovi za ograde.",
+    "description": "Betonski stupovi za ograde dostupni u različitim dimenzijama: ;8x8x170 cm; 8x8x200 cm; 8x8x220 cm; 8x8x260 cm.",
     "images": ["/images/products/stupovi/stupovi_ograda.png"],
     "category": "stupovi"
   },
   {
     "title": "Kapa za Stup",
     "href": "/proizvodi/stupovi/kapa-za-stup",
-    "description": "Betonska kapa za stup različitih dimenzija.",
+    "description": "Betonska kapa za stup dostupna u različitim dimenzijama:;28×28 cm; 30×30 cm; 33×33 cm; 36×36 cm; 40×40 cm; 45×45 cm; 50×50 cm; 55×55 cm; 36×24 cm; 33×27 cm; 36×25 cm; 39×24 cm; 40×30 cm; 45×26 cm; 45×31 cm; 48×28 cm; 50×30 cm; 53×31 cm; 60×30 cm; 36×31 cm",
     "images": ["/images/products/kape/kapa_za_stup.png"],
     "category": "stupovi"
   },
   {
-    "title": "Kapa 40x40 cm",
-    "href": "/proizvodi/stupovi/kapa-40x40",
+    "title": "Dimjačka kapa četvrtasta 40x40 cm",
+    "href": "/proizvodi/ostalo/kapa-40x40",
     "description": "Betonska kapa dimenzija 40x40 cm.",
     "images": ["/images/products/kape/kapa_40x40.png"],
-    "category": "stupovi"
+    "category": "ostalo"
   },
   {
-    "title": "Kapa 45x45 cm",
-    "href": "/proizvodi/stupovi/kapa-45x45",
+    "title": "Dimjačka kapa četvrtasta 45x45 cm",
+    "href": "/proizvodi/ostalo/kapa-45x45",
     "description": "Betonska kapa dimenzija 45x45 cm.",
     "images": ["/images/products/kape/kapa_45x45.png"],
-    "category": "stupovi"
+    "category": "ostalo"
   },
   {
-    "title": "Kapa 50x50 cm",
-    "href": "/proizvodi/stupovi/kapa-50x50",
+    "title": "Dimjačka kapa četvrtasta 50x50 cm",
+    "href": "/proizvodi/ostalo/kapa-50x50",
     "description": "Betonska kapa dimenzija 50x50 cm.",
     "images": ["/images/products/kape/kapa_50x50.png"],
-    "category": "stupovi"
+    "category": "ostalo"
   },
   {
     "title": "Cvjetnjak 58x58x33",
     "href": "/proizvodi/vrt-i-dekoracija/cvjetnjak-58x58x33",
-    "description": "Dekorativni betonski cvjetnjak dimenzija 58x58x33 cm.",
+    "description": "Slaganje iz Z blokova; Mogućnost slaganja u više veličina; Izrada iz bijelog ili sivog cementa.",
     "images": ["/images/products/vrt/cvjetnjak_58_58_33.jpeg"],
     "category": "vrt-i-dekoracija"
   },
   {
-    "title": "Daska",
+    "title": "Betonska dekorativna hrastova daska",
     "href": "/proizvodi/vrt-i-dekoracija/daska",
-    "description": "Betonska daska za vrtne dekoracije.",
+    "description": "Imitacije hrastove daske.;Širina je od 20 do 25 cm;Dužina: 98 cm; Debljina: 2,5 cm",
     "images": ["/images/products/vrt/daska.jpeg"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza",
     "href": "/proizvodi/vrt-i-dekoracija/vaza",
-    "description": "Dekorativna betonska vaza.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 82 cm; Visina: 57 cm",
     "images": ["/images/products/vrt/vaza.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 10",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-10",
-    "description": "Dekorativna betonska vaza model 10.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Dužina: 100 cm; Visina: 62 cm; Širina: 66 cm",
     "images": ["/images/products/vrt/vaza_10.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 20",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-20",
-    "description": "Dekorativna betonska vaza model 20.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 51 cm; Visina: 21 cm",
     "images": ["/images/products/vrt/vaza_20.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 60",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-60",
-    "description": "Dekorativna betonska vaza model 60.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 60 cm; Visina: 80 cm",
     "images": ["/images/products/vrt/vaza_60.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 70",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-70",
-    "description": "Dekorativna betonska vaza model 70.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 44 cm; Visina: 36 cm",
     "images": ["/images/products/vrt/vaza_70.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 80",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-80",
-    "description": "Dekorativna betonska vaza model 80.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 50 cm; Visina: 25 cm",
     "images": ["/images/products/vrt/vaza_80.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 90",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-90",
-    "description": "Dekorativna betonska vaza model 90.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Dužina: 60 cm; Visina: 44 cm; Širina: 50 cm",
     "images": ["/images/products/vrt/vaza_90.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza 100",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-100",
-    "description": "Dekorativna betonska vaza model 100.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Širina: 60 cm; Visina: 45 cm",
     "images": ["/images/products/vrt/vaza_100.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vaza Korpa",
     "href": "/proizvodi/vrt-i-dekoracija/vaza-korpa",
-    "description": "Dekorativna betonska vaza u obliku korpe.",
+    "description": "Dekorativna betonska vaza dimenzija: ;Dužina: 43 cm; Visina: 32 cm; Širina: 36 cm",
     "images": ["/images/products/vrt/vaza_korpa.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Vrtna Pipa 10",
     "href": "/proizvodi/vrt-i-dekoracija/vrtna-pipa-10",
-    "description": "Betonska vrtna pipa model 10.",
+    "description": "Betonska vrtna pipa.; Visina 127 cm; Širina 40 cm; Dužina 63 cm; Izrada iz bijelog ili sivog cementa",
     "images": ["/images/products/vrt/vrtna_pipa_10.jpeg"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Žardinjera 100x36",
     "href": "/proizvodi/vrt-i-dekoracija/zardinjera-100x36",
-    "description": "Betonska žardinjera dimenzija 100x36 cm.",
+    "description": "Betonska žardinjera dimenzija: ;Dužina: 100 cm; Visina: 43 cm; Širina: 36 cm",
     "images": ["/images/products/vrt/zardinjera_100x36.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Žardinjera 150x61x40",
     "href": "/proizvodi/vrt-i-dekoracija/zardinjera-150x61x40",
-    "description": "Betonska žardinjera dimenzija 150x61x40 cm.",
+    "description": "Betonska žardinjera dimenzija: ;Dužina: 150 cm; Visina: 40 cm; Širina: 61 cm",
     "images": ["/images/products/vrt/zardinjera_150x61x40.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Žardinjera 150x61x61",
     "href": "/proizvodi/vrt-i-dekoracija/zardinjera-150x61x61",
-    "description": "Betonska žardinjera dimenzija 150x61x61 cm.",
+    "description": "Betonska žardinjera dimenzija: ;Dužina: 150 cm; Visina: 61 cm; Širina: 61 cm",
     "images": ["/images/products/vrt/zardinjera_150x61x61.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Žardinjera 80x23",
     "href": "/proizvodi/vrt-i-dekoracija/zardinjera-80x23",
-    "description": "Betonska žardinjera dimenzija 80x23 cm.",
+    "description": "Betonska žardinjera dimenzija: ;Dužina: 90 cm; Visina: 25 cm; Širina: 23 cm",
     "images": ["/images/products/vrt/zardinjera_80x23.png"],
     "category": "vrt-i-dekoracija"
   },
   {
     "title": "Žardinjera 80x32",
     "href": "/proizvodi/vrt-i-dekoracija/zardinjera-80x32",
-    "description": "Betonska žardinjera dimenzija 80x32 cm.",
+    "description": "Betonska žardinjera dimenzija: ;Dužina: 80 cm; Visina: 36 cm; Širina: 32 cm",
     "images": ["/images/products/vrt/zardinjera_80x32.png"],
     "category": "vrt-i-dekoracija"
   },

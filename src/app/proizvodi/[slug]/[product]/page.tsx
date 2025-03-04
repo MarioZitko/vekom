@@ -36,6 +36,9 @@ export default async function ProductPage({
 
   if (!product) return notFound(); // If product doesn't exist, return 404
 
+  // ✅ Split the description by ";", treating each segment as a bullet point
+  const descriptionPoints = product.description.split(';').map((point) => point.trim());
+
   return (
     <main className="container mx-auto px-6 lg:px-12 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -45,7 +48,7 @@ export default async function ProductPage({
             <CarouselContent>
               {product.images.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
+                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg bg-gray-100">
                     <Image
                       src={img}
                       alt={`${product.title} - Image ${index + 1}`}
@@ -71,9 +74,13 @@ export default async function ProductPage({
         {/* Content Section (Right) */}
         <div className="w-full">
           <h1 className="text-2xl sm:text-3xl font-bold text-primary">{product.title}</h1>
-          <p className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed">
-            {product.description}
-          </p>
+
+          {/* Render description as bullet points */}
+          <ul className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed list-disc list-inside">
+            {descriptionPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </main>
