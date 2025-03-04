@@ -11,21 +11,26 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
+// ✅ Ensure params is properly awaited
 export async function generateMetadata({
   params,
 }: {
-  params: { slug?: string; product?: string };
+  params: Promise<{ slug: string; product: string }>;
 }): Promise<Metadata> {
-  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+  const awaitedParams = await params; // ✅ Await params before accessing it
+
   const products: Product[] = await parseData('products.json');
 
-  const product = products.find((p) => p.href.endsWith(`/${awaitedParams.product}`));
+  // ✅ Ensure awaitedParams.product is always a valid string
+  const productSlug = decodeURIComponent(awaitedParams.product);
+
+  const product = products.find((p) => p.href.endsWith(`/${productSlug}`));
 
   if (!product) return notFound();
 
   return {
     title: `${product.title} - Vekom Građevinski Elementi`,
-    description: product.description.split(';')[0], // Use first sentence as meta description
+    description: product.description.split(';')[0],
     openGraph: {
       title: product.title,
       description: product.description.split(';')[0],
@@ -34,19 +39,24 @@ export async function generateMetadata({
   };
 }
 
+// ✅ Ensure params is properly awaited
 export default async function ProductPage({
-  params: rawParams,
+  params,
 }: {
-  params: { slug?: string; product?: string };
+  params: Promise<{ slug: string; product: string }>;
 }) {
-  const params = await Promise.resolve(rawParams); // ✅ Ensure params are awaited
+  const awaitedParams = await params; // ✅ Await params before using it
 
-  if (!params.slug || !params.product) {
+  if (!awaitedParams?.slug || !awaitedParams?.product) {
     return notFound();
   }
 
   const products: Product[] = await parseData('products.json');
-  const product = products.find((p) => p.href.endsWith(`/${params.product}`));
+
+  // ✅ Ensure awaitedParams.product is always a valid string
+  const productSlug = decodeURIComponent(awaitedParams.product);
+
+  const product = products.find((p) => p.href.endsWith(`/${productSlug}`));
 
   if (!product) return notFound();
 

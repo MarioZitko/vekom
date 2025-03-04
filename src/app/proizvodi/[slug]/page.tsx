@@ -8,9 +8,10 @@ import { ProductCard } from '@/components/custom/ProductCard';
 export async function generateMetadata({
   params,
 }: {
-  params: { slug?: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+  const awaitedParams = await params; // ✅ Await params
+
   const categories: Category[] = await parseData('categories.json');
   const category = categories.find((cat) => cat.slug === awaitedParams.slug);
 
@@ -22,10 +23,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function CategoryPage({ params }: { params: { slug?: string } }) {
-  const awaitedParams = await Promise.resolve(params); // ✅ Ensure params are awaited
+// ✅ Ensure params is properly awaited
+export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
+  const awaitedParams = await params; // ✅ Await params
 
-  if (!awaitedParams?.slug) return notFound();
+  if (!awaitedParams.slug) return notFound();
 
   const products: Product[] = await parseData('products.json');
   const categories: Category[] = await parseData('categories.json');
