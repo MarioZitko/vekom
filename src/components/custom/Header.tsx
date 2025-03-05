@@ -100,7 +100,7 @@ export function Header({ categories }: HeaderProps) {
               <NavigationMenuItem>
                 <Link href="/kontakt" legacyBehavior passHref>
                   <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
-                    Kontakt
+                    Kontakt | Kako do nas
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -134,7 +134,7 @@ export function Header({ categories }: HeaderProps) {
               O nama
             </Link>
             <Link href="/kontakt" className="text-primary hover:text-primary-foreground">
-              Kontakt
+              Kontakt | Kako do nas
             </Link>
           </nav>
 

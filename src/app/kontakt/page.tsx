@@ -92,7 +92,7 @@ export default function ContactPage() {
 
         {/* Contact Details */}
         <div className="text-center mb-12">
-          <p className="text-lg text-secondary-foreground font-semibold">Kontakt brojevi:</p>
+          <p className="text-lg text-secondary-foreground font-semibold">Kontakt:</p>
           <p className="text-lg text-muted-foreground">
             📞{' '}
             <a href="tel:+3850915687329" className="hover:text-primary">

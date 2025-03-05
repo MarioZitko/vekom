@@ -21,6 +21,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Vekom - Proizvodnja građevinskih elemenata',
   description: 'Vekom proizvodi visokokvalitetne građevinske elemente za sve potrebe.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   metadataBase: new URL('https://www.vekom.com'), // ✅ Fix metadataBase warning
   openGraph: {
     type: 'website',
@@ -29,7 +34,7 @@ export const metadata: Metadata = {
     description: 'Najbolji građevinski elementi za sve vaše projekte.',
     images: [
       {
-        url: '/static/banner.jpg', // ✅ This will now resolve to "https://www.vekom.com/static/banner.jpg"
+        url: '/public/favicon.png', // ✅ This will now resolve to "https://www.vekom.com/static/banner.jpg"
         width: 1200,
         height: 630,
         alt: 'Vekom - Građevinski Elementi',
