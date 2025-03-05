@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.vekom.com',
     title: 'Vekom - Građevinski Elementi',
-    description: 'Najbolji građevinski elementi za sve vaše projekte.',
+    description: 'Najbolji betonski elementi za sve vaše projekte.',
     images: [
       {
         url: '/public/favicon.png', // ✅ This will now resolve to "https://www.vekom.com/static/banner.jpg"
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vekom - Građevinski Elementi',
-    description: 'Najbolji građevinski elementi za sve vaše projekte.',
+    description: 'Najbolji betonski elementi za sve vaše projekte.',
     images: ['/static/banner.jpg'],
   },
 };

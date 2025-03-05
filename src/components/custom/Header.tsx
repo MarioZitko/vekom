@@ -78,10 +78,15 @@ export function Header({ categories }: HeaderProps) {
               {/* Proizvodi opens /proizvodi & has dropdown */}
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-primary">Proizvodi</NavigationMenuTrigger>
-                <NavigationMenuContent className="absolute bg-white shadow-lg rounded-md">
+                <NavigationMenuContent className="absolute bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-800 rounded-md">
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                     {categories.map((category) => (
-                      <ListItem key={category.name} title={category.name} href={category.url}>
+                      <ListItem
+                        key={category.name}
+                        title={category.name}
+                        href={category.url}
+                        className="text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md p-2 transition"
+                      >
                         {category.description}
                       </ListItem>
                     ))}

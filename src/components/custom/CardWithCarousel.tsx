@@ -68,7 +68,7 @@ export function CardWithCarousel({ cards }: CardWithCarouselProps) {
                     {card.images.map((image, imgIndex) => (
                       <CarouselItem key={imgIndex}>
                         <div className="p-1 flex justify-center items-center h-[200px] sm:h-[250px] md:h-[280px] overflow-hidden">
-                          <div className="relative w-full h-full flex items-center justify-center">
+                          <div className="relative w-full h-full flex items-center justify-center rounded-lg">
                             <ImageDialog
                               image={image}
                               alt={`${card.title} - Slika ${imgIndex + 1}`}

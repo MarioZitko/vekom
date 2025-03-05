@@ -71,7 +71,7 @@ export default async function ProductPage({
             <CarouselContent>
               {product.images.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg bg-gray-100">
+                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
                     <Image
                       src={img}
                       alt={`${product.title} - Image ${index + 1}`}

@@ -4,8 +4,8 @@ import { parseData } from '@/lib/parseData';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vekom - Kvalitetni građevinski elementi',
-  description: 'Vekom nudi vrhunske građevinske elemente, otporne i dugotrajne.',
+  title: 'Vekom - Kvalitetni betonski elementi',
+  description: 'Vekom nudi vrhunske, otporne i dugotrajne građevinske elemente.',
 };
 
 export default async function Home() {
