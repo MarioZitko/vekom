@@ -61,7 +61,7 @@ export default function ContactPage() {
     <>
       <main className="flex flex-col items-center justify-center p-6 md:px-12 w-full max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-primary mb-12">
-          Kontakt
+          Kontakt | Kako do nas
         </h1>
 
         {/* Location Description */}
@@ -92,7 +92,7 @@ export default function ContactPage() {
 
         {/* Contact Details */}
         <div className="text-center mb-12">
-          <p className="text-lg text-secondary-foreground font-semibold">Kontakt brojevi:</p>
+          <p className="text-lg text-secondary-foreground font-semibold">Kontakt:</p>
           <p className="text-lg text-muted-foreground">
             📞{' '}
             <a href="tel:+3850915687329" className="hover:text-primary">

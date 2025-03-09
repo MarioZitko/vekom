@@ -20,9 +20,9 @@ import {
 import Autoplay from 'embla-carousel-autoplay';
 import { Button } from '../ui/button';
 import { ExternalLink } from 'lucide-react';
-import { ImageDialog } from './ImageDialog';
 import { CardWithCarouselProps } from './types';
 import { ContactDialog } from './ContactDialog';
+import Image from 'next/image';
 
 export function CardWithCarousel({ cards }: CardWithCarouselProps) {
   const [windowWidth, setWindowWidth] = useState<number>(0);
@@ -68,11 +68,15 @@ export function CardWithCarousel({ cards }: CardWithCarouselProps) {
                     {card.images.map((image, imgIndex) => (
                       <CarouselItem key={imgIndex}>
                         <div className="p-1 flex justify-center items-center h-[200px] sm:h-[250px] md:h-[280px] overflow-hidden">
-                          <div className="relative w-full h-full flex items-center justify-center">
-                            <ImageDialog
-                              image={image}
-                              alt={`${card.title} - Slika ${imgIndex + 1}`}
-                            />
+                          <div className="relative w-full h-full flex items-center justify-center rounded-lg">
+                            <Link href={card.articleLink} passHref>
+                              <Image
+                                src={image}
+                                fill
+                                alt={`${card.title} - Slika ${imgIndex + 1}`}
+                                className="rounded-lg object-contain"
+                              />
+                            </Link>
                           </div>
                         </div>
                       </CarouselItem>
