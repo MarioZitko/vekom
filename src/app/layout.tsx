@@ -7,6 +7,8 @@ import { Header } from '@/components/custom/Header';
 import { parseData } from '@/lib/parseData';
 import { Category } from '@/types/category';
 import { CookieBanner } from '@/components/custom/CookieBanner';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -86,6 +88,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       >
         <Header categories={categories} />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Toaster />
         <Footer />
         <CookieBanner />
