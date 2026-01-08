@@ -71,11 +71,11 @@ export function Header({ categories }: HeaderProps) {
           <NavigationMenu>
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
+                <NavigationMenuLink asChild>
+                  <Link href="/" className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
                     Početna
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               {/* Proizvodi opens /proizvodi & has dropdown */}
@@ -98,19 +98,22 @@ export function Header({ categories }: HeaderProps) {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/o-nama" legacyBehavior passHref>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
+                <NavigationMenuLink asChild>
+                  <Link href="/o-nama" className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
                     O nama
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/kontakt" legacyBehavior passHref>
-                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-primary')}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/kontakt"
+                    className={cn(navigationMenuTriggerStyle(), 'text-primary')}
+                  >
                     Kontakt | Kako do nas
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
