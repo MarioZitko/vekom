@@ -1,220 +1,73 @@
-# 🚀 Next.js 15 + TypeScript + ShadCN UI Template
+# Vekom — Website (Next.js + TypeScript + ShadCN UI)
 
-This is a **Next.js 15** template built with **TypeScript** and **ShadCN UI**, optimized for a scalable, component-based frontend.
+A production website for Vekom (concrete building elements) — built to showcase a modern, accessible, and maintainable frontend implementation using Next.js, TypeScript and ShadCN UI. This repo is also a portfolio piece demonstrating component design, theming, accessibility, and practical integrations (email API, cookie consent, light/dark mode).
 
----
+## Tech stack
 
-## 🔥 Features
-✅ **Next.js 15 with App Router**  
-✅ **TypeScript for type safety**  
-✅ **ShadCN UI for flexible, customizable components**  
-✅ **Tailwind CSS for styling**  
-✅ **ESLint & Prettier for code quality**  
-✅ **GitHub-ready repository structure**  
+- Next.js (App Router) — see [`src/app/layout.tsx`](src/app/layout.tsx)
+- TypeScript
+- Tailwind CSS — config: [`tailwind.config.ts`](tailwind.config.ts)
+- ShadCN / Radix UI components — examples: [`src/components/ui/button.tsx`](src/components/ui/button.tsx), [`src/components/ui/carousel.tsx`](src/components/ui/carousel.tsx)
+- Embla carousel + autoplay plugin (image carousels)
+- Sonner for toast notifications — [`src/components/ui/sonner.tsx`](src/components/ui/sonner.tsx)
 
----
+## What to look at (highlights)
 
-## 📂 Project Structure
-```
-my-template/
-│── src/
-│   ├── app/             # Next.js App Router (Replaces pages/)
-│   │   ├── layout.tsx   # Global Layout (Required)
-│   │   ├── page.tsx     # Home Page
-│   │   ├── api/         # API Routes (If Needed)
-│   ├── components/      # Reusable UI components
-│   ├── hooks/           # Custom hooks
-│   ├── lib/             # Utility functions
-│   ├── public/          # Static assets
-│   ├── styles/          # Global styles
-│   ├── types/           # TypeScript types/interfaces
-│── .eslintrc.json       # ESLint config
-│── .prettierrc.json     # Prettier config
-│── tailwind.config.ts   # Tailwind config
-│── tsconfig.json        # TypeScript config
-│── next.config.ts       # Next.js config
-│── package.json         # Dependencies
-```
+- Home + component demo: [`src/app/page.tsx`](src/app/page.tsx) (uses [`CardWithCarousel`](src/components/custom/CardWithCarousel.tsx))
+- Themed layout & global data loading: [`src/app/layout.tsx`](src/app/layout.tsx)
+- Header / navigation: [`Header`](src/components/custom/Header.tsx) (`NavigationMenu` lives in [`src/components/ui/navigation-menu.tsx`](src/components/ui/navigation-menu.tsx))
+- Reusable UI primitives: Button, Card, Dialog, Input, Textarea in [`src/components/ui/`](src/components/ui/)
+  - [`Button`](src/components/ui/button.tsx)
+  - [`Card`](src/components/ui/card.tsx)
+  - [`Dialog`](src/components/ui/dialog.tsx)
+  - [`Carousel` components](src/components/ui/carousel.tsx)
+- Product pages & carousels: [`src/app/proizvodi/[slug]/[product]/page.tsx`](src/app/proizvodi/[slug]/[product]/page.tsx)
+- Data loader used across pages: [`parseData`](src/lib/parseData.ts)
+- Utility for classnames: [`cn`](src/lib/utils.ts)
+- Theming variables: [`src/app/globals.css`](src/app/globals.css) + [`tailwind.config.ts`](tailwind.config.ts)
+- Contact flow (client form + email API): form UI [`ContactDialog`](src/components/custom/ContactDialog.tsx) and server route [`src/app/api/send-email/route.ts`](src/app/api/send-email/route.ts)
+- Cookie consent & preferences: [`CookieBanner`](src/components/custom/CookieBanner.tsx)
+- Dark mode toggle: [`DarkModeToggle`](src/components/custom/DarkModeToggle.tsx)
 
----
+## Run locally
 
-## 🛠️ Installation & Setup
-### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-```
-
-### **2️⃣ Install Dependencies**
-```bash
+# Install
 npm install
-```
 
-### **3️⃣ Run the Development Server**
-```bash
+# Dev
 npm run dev
-```
-Open **`http://localhost:3000`** to see your project.
 
----
-
-## 🎨 Using ShadCN UI
-ShadCN UI is a **customizable component library** built with Radix UI and Tailwind CSS.
-
-### **1️⃣ Add New Components**
-To add UI components, use:
-```bash
-npx shadcn-ui@latest add button card input
-```
-This will generate the components inside **`src/components/ui/`**.
-
----
-
-## 🎯 Absolute Imports
-✅ **Why?** No more `../../../components/Button.tsx` imports!
-
-Now import like this:
-```tsx
-import Button from "@/components/ui/button";
-```
-
----
-
-## 🎨 Theming
-
-### **1️⃣ Define Your Theme in `globals.css`**
-```css
-:root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 47.4% 11.2%;
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
-}
-
-.dark {
-  --background: 222.2 47.4% 11.2%;
-  --foreground: 0 0% 100%;
-}
-```
-
-### **2️⃣ Update Tailwind Config (`tailwind.config.ts`)**
-```ts
-import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
-
-const config: Config = {
-  darkMode: ["class"],
-  content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-      },
-    },
-  },
-  plugins: [tailwindcssAnimate],
-};
-
-export default config;
-```
-
----
-
-## 🔥 Toast Notifications (Sonner)
-
-```tsx
-import { Toaster, toast } from "sonner";
-
-<Toaster position="top-right" />;
-toast.success("Action completed successfully!");
-```
-🎯 **Benefit:** Instant toast messages with no setup hassle.
-
----
-
-## ✨ Linting & Formatting
-### **ESLint (Code Quality)**
-```bash
-npm run lint
-```
-### **Prettier (Code Formatting)**
-```bash
-npx prettier --write .
-```
-
----
-
-## 🗺️ SEO & Sitemap Configuration
-### **1️⃣ Metadata & OpenGraph**
-Modify `layout.tsx` for global SEO:
-```tsx
-export const metadata = {
-  title: "My Next.js 15 App",
-  description: "A high-performance Next.js 15 website optimized for SEO.",
-  openGraph: {
-    title: "My Next.js 15 App",
-    description: "Optimized for SEO & performance",
-    url: "https://yourwebsite.com",
-    images: [{ url: "https://yourwebsite.com/og-image.jpg" }],
-  },
-};
-```
-
-### **2️⃣ Modify Sitemap config**
-Modify `next-sitemap.config.ts` to include your webpage URL:
-```tsx
-const config: IConfig = {
-  siteUrl: 'https://yourwebsite.com', // Change this to your actual site URL
-  generateRobotsTxt: true, // Generates robots.txt file
-};
-```
-
-### **3️⃣ Sitemap Behavior**
-Run:
-```bash
-npm run build && npm run postbuild
-```
-Now Next.js will generate:
-- **`public/sitemap.xml`** → List of all pages for search engines.
-- **`public/robots.txt`** → Controls what search engines can crawl.
-
----
-
-## 📦 Building for Production
-To generate a production build:
-```bash
+# Build
 npm run build
-```
-Then, start the app:
-```bash
-npm start
+# Optional postbuild (sitemap/robots generation as used in this project)
+npm run postbuild
 ```
 
----
+Files you will use directly:
 
-## 🚀 Deployment
-### **Vercel (Recommended)**
-1. Install the Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-2. Run:
-   ```bash
-   vercel
-   ```
-3. Follow the prompts to deploy.
+- Project config: [`package.json`](package.json), [`next.config.ts`](next.config.ts)
+- Global styles & tokens: [`src/app/globals.css`](src/app/globals.css)
+- Tailwind config: [`tailwind.config.ts`](tailwind.config.ts)
 
----
+## How this showcases my skills
 
-## 📜 License
-This project is open-source under the **MIT License**.
+- Component-driven architecture: modular UI in [`src/components/ui/`](src/components/ui/) and feature components in [`src/components/custom/`](src/components/custom/)
+- Theming & accessibility: CSS variables in [`src/app/globals.css`](src/app/globals.css) and accessible Radix primitives in dialogs, menus and accordions
+- Client/server integration: contact form posts to [`src/app/api/send-email/route.ts`](src/app/api/send-email/route.ts)
+- Performance & UX: optimized Image usage (`next/image`) on galleries and carousels (`src/components/ui/carousel.tsx`)
+- Real-world concerns: cookie preferences, dark mode persistence, responsive design across layouts and components
 
----
+## Customize / Extend
+
+- Add components with shadcn-ui generator (project already organized): components live in [`src/components/ui/`](src/components/ui/)
+- Update theme tokens in [`src/app/globals.css`](src/app/globals.css) and map into Tailwind in [`tailwind.config.ts`](tailwind.config.ts)
+- Data: static JSON used by parser `parseData` in [`src/lib/parseData.ts`](src/lib/parseData.ts) (place files in `src/data/`)
+
+## Deployment
+
+Recommended: Vercel (App Router support, automatic edge builds). Example: link this repo and deploy with `vercel`.
+
+## License
+
+MIT — feel free to reuse patterns and components for other projects.

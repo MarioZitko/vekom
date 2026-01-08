@@ -40,7 +40,7 @@ export function Header({ categories }: HeaderProps) {
             {/* Phone 1 */}
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-primary" />
-              <a href="tel:+3850915687329" className="text-sm hover:text-primary">
+              <a href="tel:+3850915687329" className="text-sm hover:text-primary whitespace-nowrap">
                 +385 (0) 91 5687 329
               </a>
             </div>
@@ -48,15 +48,18 @@ export function Header({ categories }: HeaderProps) {
             {/* Phone 2 */}
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-primary" />
-              <a href="tel:+385016289196" className="text-sm hover:text-primary">
+              <a href="tel:+385016289196" className="text-sm hover:text-primary whitespace-nowrap">
                 +385 (0) 1 6289 196
               </a>
             </div>
 
             {/* Email */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 pr-4">
               <Mail className="w-4 h-4 text-primary" />
-              <a href="mailto:info@vekom-elementi.hr" className="text-sm hover:text-primary">
+              <a
+                href="mailto:info@vekom-elementi.hr"
+                className="text-sm hover:text-primary whitespace-nowrap"
+              >
                 info@vekom-elementi.hr
               </a>
             </div>
@@ -64,7 +67,7 @@ export function Header({ categories }: HeaderProps) {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           <NavigationMenu>
             <NavigationMenuList className="flex gap-4">
               <NavigationMenuItem>
@@ -118,7 +121,7 @@ export function Header({ categories }: HeaderProps) {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-primary focus:outline-none"
+          className="lg:hidden text-primary focus:outline-none"
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -127,7 +130,7 @@ export function Header({ categories }: HeaderProps) {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-secondary text-secondary-foreground py-4 px-6 border-t border-border">
+        <div className="lg:hidden bg-secondary text-secondary-foreground py-4 px-6 border-t border-border">
           <nav className="flex flex-col gap-4 text-center">
             <Link href="/" className="text-primary hover:text-primary-foreground">
               Početna

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/favicon.ico',
   },
-  metadataBase: new URL('https://www.vekom.com'), // ✅ Fix metadataBase warning
+  metadataBase: new URL('https://www.vekom.com'),
   openGraph: {
     type: 'website',
     url: 'https://www.vekom.com',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: 'Najbolji betonski elementi za sve vaše projekte.',
     images: [
       {
-        url: '/public/favicon.png', // ✅ This will now resolve to "https://www.vekom.com/static/banner.jpg"
+        url: '/public/banner.png',
         width: 1200,
         height: 630,
         alt: 'Vekom - Građevinski Elementi',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vekom - Građevinski Elementi',
     description: 'Najbolji betonski elementi za sve vaše projekte.',
-    images: ['/static/banner.jpg'],
+    images: ['/banner.png'],
   },
 };
 

@@ -15,9 +15,9 @@ export default async function AboutPage() {
               Povijest naše tvrtke
             </h2>
             <p className="text-lg text-muted-foreground">
-              Već više od 30 godina, naša obiteljska tvrtka proizvodi kvalitetne betonske elemente
-              prepoznate po izdržljivosti i preciznoj izradi. Počeli smo kao mala radionica, ali smo
-              se tijekom godina razvili u vodećeg proizvođača betonskih elemenata u regiji.
+              Već više od 30 godina, naša mala obiteljska tvrtka posvećena je proizvodnji
+              kvalitetnih betonskih elemenata. Želimo se posvetiti svakom klijentu, stoga naš cilj
+              nije masovna proizvodnja već osiguravanje konstantne kvalitete proizvoda.
             </p>
           </div>
           <div className="w-full md:w-1/2">
@@ -48,28 +48,6 @@ export default async function AboutPage() {
             <Image
               src="/images/about/vrtna-pipa.jpeg"
               alt="Zadovoljni klijenti"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Quality Assurance Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-secondary-foreground mb-4">Jamstvo kvalitete</h2>
-            <p className="text-lg text-muted-foreground">
-              Kvaliteta nam je na prvom mjestu. Naši proizvodi izrađeni su od najkvalitetnijih
-              materijala i prolaze stroge kontrole kako bi zadovoljili najviše standarde. Koristimo
-              modernu tehnologiju proizvodnje kako bismo osigurali dugotrajnost i otpornost svakog
-              betonskog elementa.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <Image
-              src="/images/about/cvjetnjak.jpeg"
-              alt="Jamstvo kvalitete"
               width={600}
               height={400}
               className="rounded-lg shadow-lg object-cover"

@@ -10,7 +10,7 @@ export function Hero() {
           src="/images/hero/kva-glavna.jpg"
           alt="Kvarner Opatija"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
         {/* Darker Overlay for Better Readability */}
@@ -20,7 +20,7 @@ export function Hero() {
       {/* Content Overlay */}
       <div className="relative w-full max-w-[90%] md:max-w-5xl px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 text-center md:text-right">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-lg leading-tight">
-          Vrhunska kvaliteta s 30 godina tradicije
+          Prepoznata kvaliteta s 30 godina tradicije
         </h1>
         <p className="mt-4 text-sm sm:text-lg md:text-xl text-gray-200 max-w-full md:max-w-lg md:mr-0 ml-auto">
           Naša obiteljska tvrtka već više od 30 godina proizvodi kvalitetne betonske elemente koji

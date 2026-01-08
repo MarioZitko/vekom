@@ -14,6 +14,17 @@ export function Footer() {
           <p className="text-sm text-muted-foreground mt-2">
             © {new Date().getFullYear()} VEKOM. Sva prava pridržana.
           </p>
+          <p className="text-sm text-muted-foreground mt-1">
+            Dizajn i razvoj:{' '}
+            <a
+              href="https://mariozitko.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition underline"
+            >
+              Mario Žitković
+            </a>
+          </p>
         </div>
 
         {/* Middle Section: Contact Information */}
