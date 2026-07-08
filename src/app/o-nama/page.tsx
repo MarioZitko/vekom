@@ -30,13 +30,13 @@ export default async function AboutPage() {
   return (
     <>
       <Hero
-        imageSrc="/images/about/cvjetnjak.jpeg"
+        imageSrc="/images/about/heroAbout.jpeg"
         imageAlt="Proizvodnja Vekom"
         heading="30 godina preciznosti u svakom elementu"
         subheading="Obiteljska tvrtka posvećena kvaliteti, a ne masovnoj proizvodnji — upoznajte priču iza svakog betonskog elementa koji izradimo."
         ctas={[{ href: '/proizvodi', label: 'Pogledaj proizvode', variant: 'primary' }]}
         heightClass="min-h-[60vh]"
-        offsetForHeader
+        objectPosition="center 80%"
       />
 
       <main className="flex flex-col items-center">
@@ -60,7 +60,7 @@ export default async function AboutPage() {
                   alt="Povijest tvrtke"
                   width={600}
                   height={400}
-                  className="rounded-lg object-cover shadow-soft-lg"
+                  className="rounded-lg object-cover "
                 />
               </div>
             </div>

@@ -15,6 +15,7 @@ interface HeroProps {
   ctas?: HeroCta[];
   heightClass?: string;
   offsetForHeader?: boolean;
+  objectPosition?: string;
 }
 
 const defaultCtas: HeroCta[] = [
@@ -30,6 +31,7 @@ export function Hero({
   ctas = defaultCtas,
   heightClass = 'h-[75vh]',
   offsetForHeader = false,
+  objectPosition = 'center',
 }: HeroProps) {
   return (
     <section
@@ -38,7 +40,14 @@ export function Hero({
     >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-cover object-top" priority />
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-cover"
+          style={{ objectPosition }}
+          priority
+        />{' '}
         {/* Warm Overlay for Better Readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(25,20%,8%)]/90 via-[hsl(20,25%,10%)]/75 to-[hsl(15,30%,15%)]/50 md:bg-gradient-to-r md:from-[hsl(25,20%,8%)]/85 md:via-[hsl(20,25%,10%)]/60 md:to-[hsl(15,30%,15%)]/30"></div>
         {/* Bottom fade into page background */}

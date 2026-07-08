@@ -23,12 +23,14 @@ const navLinkClass = cn(
   'bg-transparent hover:bg-primary/10 hover:text-primary data-[state=open]:bg-primary/10 data-[state=open]:text-primary focus:bg-primary/10 focus:text-primary',
 );
 
+const TRANSPARENT_HEADER_ROUTES = ['/', '/o-nama'];
+
 export function Header({ categories }: HeaderProps) {
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const pathname = usePathname();
-  const isHome = pathname === '/';
-  const isTransparent = isHome && !isScrolled;
+  const isHeroRoute = pathname !== null && TRANSPARENT_HEADER_ROUTES.includes(pathname);
+  const isTransparent = isHeroRoute && !isScrolled;
 
   React.useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 16);
@@ -60,15 +62,14 @@ export function Header({ categories }: HeaderProps) {
               href="/"
               className={cn(
                 'transition',
-                isTransparent ? 'text-white hover:text-white/80' : 'text-primary hover:text-primary/80',
+                isTransparent
+                  ? 'text-white hover:text-white/80'
+                  : 'text-primary hover:text-primary/80',
               )}
             >
               VEKOM
               <p
-                className={cn(
-                  'text-sm',
-                  isTransparent ? 'text-white/70' : 'text-muted-foreground',
-                )}
+                className={cn('text-sm', isTransparent ? 'text-white/70' : 'text-muted-foreground')}
               >
                 Proizvodnja građevinskih elemenata
               </p>
@@ -134,7 +135,12 @@ export function Header({ categories }: HeaderProps) {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/"
-                    className={cn(navLinkClass, isTransparent ? 'text-white hover:bg-white/10 hover:text-white' : 'text-primary')}
+                    className={cn(
+                      navLinkClass,
+                      isTransparent
+                        ? 'text-white hover:bg-white/10 hover:text-white'
+                        : 'text-primary',
+                    )}
                   >
                     Početna
                   </Link>
@@ -144,7 +150,13 @@ export function Header({ categories }: HeaderProps) {
               {/* Proizvodi opens /proizvodi & has dropdown */}
               <NavigationMenuItem>
                 <NavigationMenuTrigger
-                  className={cn(navLinkClass, isTransparent ? 'text-white hover:bg-white/10 hover:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white' : 'text-primary')}
+                  className={cn(
+                    navLinkClass,
+                    isTransparent
+                      ? 'text-white hover:bg-white/10 hover:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white'
+                      : 'text-primary',
+                  )}
+                  onClick={() => (window.location.href = '/proizvodi')}
                 >
                   Proizvodi
                 </NavigationMenuTrigger>
@@ -168,7 +180,12 @@ export function Header({ categories }: HeaderProps) {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/o-nama"
-                    className={cn(navLinkClass, isTransparent ? 'text-white hover:bg-white/10 hover:text-white' : 'text-primary')}
+                    className={cn(
+                      navLinkClass,
+                      isTransparent
+                        ? 'text-white hover:bg-white/10 hover:text-white'
+                        : 'text-primary',
+                    )}
                   >
                     O nama
                   </Link>
@@ -179,7 +196,12 @@ export function Header({ categories }: HeaderProps) {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/kontakt"
-                    className={cn(navLinkClass, isTransparent ? 'text-white hover:bg-white/10 hover:text-white' : 'text-primary')}
+                    className={cn(
+                      navLinkClass,
+                      isTransparent
+                        ? 'text-white hover:bg-white/10 hover:text-white'
+                        : 'text-primary',
+                    )}
                   >
                     Kontakt | Kako do nas
                   </Link>
@@ -194,7 +216,10 @@ export function Header({ categories }: HeaderProps) {
 
         {/* Mobile Menu Button */}
         <button
-          className={cn('lg:hidden focus:outline-none', isTransparent ? 'text-white' : 'text-primary')}
+          className={cn(
+            'lg:hidden focus:outline-none',
+            isTransparent ? 'text-white' : 'text-primary',
+          )}
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
