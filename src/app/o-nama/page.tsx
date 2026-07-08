@@ -1,30 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Hammer, ShieldCheck, Handshake } from 'lucide-react';
 import { Hero } from '@/components/custom/Hero';
 import { Reveal } from '@/components/custom/Reveal';
-import { Card, CardContent } from '@/components/ui/card';
-
-const values = [
-  {
-    icon: Hammer,
-    title: 'Kvaliteta',
-    description:
-      'Svaki element prolazi pažljivu kontrolu izrade, od odabira materijala do finalne obrade.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Preciznost',
-    description:
-      'Radimo po strogim mjerama i standardima kako bi svaki proizvod savršeno pasao svojoj namjeni.',
-  },
-  {
-    icon: Handshake,
-    title: 'Partnerstvo',
-    description:
-      'Gradimo dugoročne odnose s klijentima, arhitektima i investitorima kroz povjerenje i dosljednost.',
-  },
-];
+import { AboutValues } from '@/components/custom/AboutValues';
 
 export default async function AboutPage() {
   return (
@@ -96,30 +74,7 @@ export default async function AboutPage() {
         </section>
 
         {/* Values Section */}
-        <section className="w-full py-16 md:py-24 bg-muted/40">
-          <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-            <Reveal>
-              <h2 className="text-3xl font-bold text-center text-secondary-foreground mb-12">
-                Zašto Vekom
-              </h2>
-            </Reveal>
-            <div className="grid gap-6 sm:grid-cols-3">
-              {values.map((value, index) => (
-                <Reveal key={value.title} delay={index * 100}>
-                  <Card className="h-full shadow-soft hover:shadow-soft-lg transition-shadow border-border">
-                    <CardContent className="pt-6 text-center">
-                      <value.icon className="w-8 h-8 mx-auto text-primary mb-4" />
-                      <h3 className="text-xl font-semibold text-secondary-foreground mb-2">
-                        {value.title}
-                      </h3>
-                      <p className="text-muted-foreground">{value.description}</p>
-                    </CardContent>
-                  </Card>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AboutValues />
 
         {/* Closing CTA */}
         <section className="w-full py-16 md:py-20 bg-secondary text-secondary-foreground">

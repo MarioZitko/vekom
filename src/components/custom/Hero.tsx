@@ -24,14 +24,14 @@ const defaultCtas: HeroCta[] = [
 ];
 
 export function Hero({
-  imageSrc = '/images/hero/kva-glavna.jpg',
+  imageSrc = '/images/hero/hero.jpeg',
   imageAlt = 'Kvarner Opatija',
   heading = 'Prepoznata kvaliteta s 30 godina tradicije',
   subheading = 'Naša obiteljska tvrtka već više od 30 godina proizvodi kvalitetne betonske elemente koji su prepoznati po svojoj izdržljivosti i preciznoj izradi. Ponosimo se brojnim zadovoljnim kupcima i projektima diljem Hrvatske.',
   ctas = defaultCtas,
   heightClass = 'h-[75vh]',
   offsetForHeader = false,
-  objectPosition = 'center',
+  objectPosition = 'center 70%',
 }: HeroProps) {
   return (
     <section
@@ -49,7 +49,7 @@ export function Hero({
           priority
         />{' '}
         {/* Warm Overlay for Better Readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(25,20%,8%)]/90 via-[hsl(20,25%,10%)]/75 to-[hsl(15,30%,15%)]/50 md:bg-gradient-to-r md:from-[hsl(25,20%,8%)]/85 md:via-[hsl(20,25%,10%)]/60 md:to-[hsl(15,30%,15%)]/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/20 md:bg-gradient-to-r md:from-transparent md:via-black/30 md:to-black/75"></div>{' '}
         {/* Bottom fade into page background */}
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
       </div>
