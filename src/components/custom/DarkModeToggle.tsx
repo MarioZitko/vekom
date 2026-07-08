@@ -28,9 +28,9 @@ export function DarkModeToggle() {
 
   return (
     <div className="flex items-center space-x-2">
-      <Sun className="w-5 h-5 text-yellow-400" />
+      <Sun className="w-5 h-5 text-primary" />
       <Switch checked={darkMode} onCheckedChange={toggleDarkMode} />
-      <Moon className="w-5 h-5 text-gray-500" />
+      <Moon className="w-5 h-5 text-muted-foreground" />
     </div>
   );
 }

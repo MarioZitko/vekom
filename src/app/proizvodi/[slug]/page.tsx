@@ -4,6 +4,8 @@ import { parseData } from '@/lib/parseData';
 import { Product } from '@/types/product';
 import { Category } from '@/types/category';
 import { ProductCard } from '@/components/custom/ProductCard';
+import { CategoryPageHeader } from '@/components/custom/CategoryPageHeader';
+import { Reveal } from '@/components/custom/Reveal';
 
 export async function generateMetadata({
   params,
@@ -39,28 +41,18 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
-      <header className="w-full bg-secondary text-secondary-foreground shadow-md py-4">
-        <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-primary">{category.name}</h1>
-          <p className="mt-2 text-gray-500 text-sm sm:text-base">
-            Pregledajte proizvode u ovoj kategoriji
-          </p>
-        </div>
-      </header>
+      <CategoryPageHeader title={category.name} subtitle="Pregledajte proizvode u ovoj kategoriji" />
 
       <main className="container mx-auto px-6 lg:px-12 py-8">
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center">
           {filteredProducts.length > 0 ? (
-            filteredProducts.map((product) => (
-              <ProductCard
-                key={product.title}
-                title={product.title}
-                href={product.href}
-                image={product.images[0]}
-              />
+            filteredProducts.map((product, index) => (
+              <Reveal key={product.title} delay={index * 80}>
+                <ProductCard title={product.title} href={product.href} image={product.images[0]} />
+              </Reveal>
             ))
           ) : (
-            <p className="text-center text-gray-500 text-lg">
+            <p className="text-center text-muted-foreground text-lg">
               Nema dostupnih proizvoda u ovoj kategoriji.
             </p>
           )}

@@ -10,6 +10,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+      },
+      boxShadow: {
+        soft: '0 2px 8px -2px hsl(var(--shadow-soft) / 0.18), 0 8px 24px -8px hsl(var(--shadow-soft) / 0.22)',
+        'soft-lg':
+          '0 4px 14px -2px hsl(var(--shadow-soft) / 0.22), 0 18px 44px -12px hsl(var(--shadow-soft) / 0.28)',
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

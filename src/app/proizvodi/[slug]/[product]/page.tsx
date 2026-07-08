@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { Reveal } from '@/components/custom/Reveal';
 
 // ✅ Ensure params is properly awaited
 export async function generateMetadata({
@@ -64,14 +65,14 @@ export default async function ProductPage({
 
   return (
     <main className="container mx-auto px-6 lg:px-12 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <Reveal className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Image Carousel Section */}
         <div className="w-full">
           <Carousel className="w-full max-w-lg mx-auto" opts={{ align: 'start', loop: true }}>
             <CarouselContent>
               {product.images.map((img, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-800">
+                  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-lg shadow-soft bg-muted">
                     <Image
                       src={img}
                       alt={`${product.title} - Image ${index + 1}`}
@@ -99,13 +100,13 @@ export default async function ProductPage({
           <h1 className="text-2xl sm:text-3xl font-bold text-primary">{product.title}</h1>
 
           {/* Render description as bullet points */}
-          <ul className="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed list-disc list-inside">
+          <ul className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed list-disc list-inside">
             {descriptionPoints.map((point, index) => (
               <li key={index}>{point}</li>
             ))}
           </ul>
         </div>
-      </div>
+      </Reveal>
     </main>
   );
 }

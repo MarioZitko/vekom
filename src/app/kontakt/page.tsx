@@ -59,7 +59,10 @@ export default function ContactPage() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center p-6 md:px-12 w-full max-w-6xl mx-auto">
+      <main
+        className="flex flex-col items-center justify-center p-6 md:px-12 w-full max-w-6xl mx-auto"
+        style={{ paddingTop: 'calc(var(--header-h) + 1.5rem)' }}
+      >
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-primary mb-12">
           Kontakt | Kako do nas
         </h1>

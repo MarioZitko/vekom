@@ -39,7 +39,7 @@ export function CookieBanner() {
     <>
       {/* Floating Cookie Settings Button */}
       <button
-        className="fixed bottom-6 left-6 p-3 bg-primary text-white rounded-full shadow-lg hover:bg-primary/80 transition"
+        className="fixed bottom-6 left-6 p-3 bg-primary text-primary-foreground rounded-full shadow-lg hover:bg-primary/80 transition"
         onClick={() => setOpen(true)}
       >
         🍪
@@ -52,7 +52,7 @@ export function CookieBanner() {
             <DialogTitle>Pregled privatnosti</DialogTitle>
           </DialogHeader>
 
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-muted-foreground">
             Ova web stranica koristi kolačiće za poboljšanje vašeg iskustva tijekom navigacije.
             Možete prilagoditi postavke kolačića u nastavku.
           </p>
@@ -88,7 +88,7 @@ export function CookieBanner() {
             <AccordionItem value="privacy">
               <AccordionTrigger>Pregled privatnosti</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Ova web stranica koristi kolačiće za poboljšanje vašeg iskustva tijekom navigacije
                   po web mjestu. Iz tih kolačića, kolačići koji se prema potrebi kategoriziraju
                   pohranjuju se na vaš preglednik jer su bitni za rad osnovnih funkcionalnosti web
@@ -104,7 +104,7 @@ export function CookieBanner() {
             <AccordionItem value="necessary">
               <AccordionTrigger>Nužni kolačići</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Nužni kolačići apsolutno su bitni za pravilno funkcioniranje web stranice. Ovi
                   kolačići anonimno osiguravaju osnovne funkcionalnosti i sigurnosne značajke web
                   stranice.
@@ -115,7 +115,7 @@ export function CookieBanner() {
             <AccordionItem value="functional">
               <AccordionTrigger>Funkcionalni kolačići</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Funkcionalni kolačići pomažu u izvršavanju određenih funkcija poput dijeljenja
                   sadržaja web stranice na platformama društvenih medija, prikupljanja povratnih
                   informacija i drugih značajki trećih strana.
@@ -126,7 +126,7 @@ export function CookieBanner() {
             <AccordionItem value="analytics">
               <AccordionTrigger>Analitički kolačići</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Analitički kolačići koriste se za razumijevanje interakcije posjetitelja s web
                   lokacijom. Ovi kolačići pomažu pružiti informacije o mjernim podacima, broju
                   posjetitelja, stopi napuštanja početne stranice, izvoru prometa itd.
@@ -137,7 +137,7 @@ export function CookieBanner() {
             <AccordionItem value="advertising">
               <AccordionTrigger>Oglasni kolačići</AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Oglasni kolačići koriste se za pružanje posjetiteljima relevantnih oglasa i
                   marketinških kampanja. Ovi kolačići prate posjetitelje na web stranicama i
                   prikupljaju podatke za pružanje prilagođenih oglasa.

@@ -41,7 +41,10 @@ export function CardWithCarousel({ cards }: CardWithCarouselProps) {
       } place-items-center`}
     >
       {cards.map((card, index) => (
-        <Card key={index} className="w-full max-w-[320px] sm:max-w-[360px] flex flex-col">
+        <Card
+          key={index}
+          className="w-full max-w-[320px] sm:max-w-[360px] flex flex-col shadow-soft hover:shadow-soft-lg transition-shadow"
+        >
           <CardHeader>
             <CardTitle className="text-lg sm:text-xl">{card.title}</CardTitle>
             <CardDescription className="text-sm sm:text-base h-[70px] overflow-hidden">
@@ -92,7 +95,7 @@ export function CardWithCarousel({ cards }: CardWithCarouselProps) {
                 </Carousel>
               </div>
             ) : (
-              <div className="flex items-center justify-center h-[200px] sm:h-[250px] md:h-[280px] text-gray-500 text-sm italic">
+              <div className="flex items-center justify-center h-[200px] sm:h-[250px] md:h-[280px] text-muted-foreground text-sm italic">
                 Nema dostupne slike
               </div>
             )}
